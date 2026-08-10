@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Plant 4 Documentation Assistant</title>
+<style>
+  :root{
+    --bg:#0f1115; --panel:#171a21; --line:#252a34; --txt:#e6e8ec; --dim:#9aa3b2;
+    --safety:#e5484d; --maintenance:#f5a524; --quality:#3e9dd9; --accent:#5b8def;
+    --ok:#3fb950; --warn:#d29922;
+  }
+  @media (prefers-color-scheme: light){
+    :root{ --bg:#f6f7f9; --panel:#fff; --line:#e2e5ea; --txt:#1a1d23; --dim:#5b6675; }
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--txt);
+    font:15px/1.6 ui-sans-serif,-apple-system,"Segoe UI",system-ui,sans-serif}
+  .wrap{max-width:940px;margin:0 auto;padding:30px 20px 80px}
+  h1{font-size:21px;margin:0 0 3px}
+  .sub{color:var(--dim);font-size:13px}
+  form{display:flex;gap:8px;margin:18px 0 0}
+  input{flex:1;padding:13px 15px;border-radius:9px;border:1px solid var(--line);
+    background:var(--panel);color:var(--txt);font-size:15px;font-family:inherit}
+  input:focus{outline:2px solid var(--accent);outline-offset:-1px}
+  button{padding:13px 22px;border-radius:9px;border:0;background:var(--accent);
+    color:#fff;font-weight:600;font-size:15px;cursor:pointer;font-family:inherit}
+  button:disabled{opacity:.5;cursor:default}
+  .examples{display:flex;flex-wrap:wrap;gap:6px;margin:16px 0 0}
+  .ex{font-size:12px;padding:5px 10px;border-radius:20px;border:1px solid var(--line);
+    background:var(--panel);color:var(--dim);cursor:pointer;font-family:inherit}
+  .ex:hover{color:var(--txt);border-color:var(--accent)}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:12px;
+    padding:17px 20px;margin-top:14px}
+  .lbl{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--dim);
+    margin-bottom:9px}
+  .row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+  .badge{font-size:12px;font-weight:700;padding:4px 11px;border-radius:6px;color:#fff}
+  .badge.safety{background:var(--safety)}
+  .badge.maintenance{background:var(--maintenance);color:#3a2a00}
+  .badge.quality{background:var(--quality)}
+  .badge.none{background:var(--dim)}
+  .pill{font-size:11.5px;padding:4px 10px;border-radius:20px;border:1px solid var(--line);
+    color:var(--dim);font-family:ui-monospace,Menlo,Consolas,monospace}
+  .pill b{color:var(--txt)}
+  .pill.high{border-color:var(--ok);color:var(--ok)}
+  .pill.medium{border-color:var(--warn);color:var(--warn)}
+  .pill.low{border-color:var(--safety);color:var(--safety)}
+  .pill.good{border-color:var(--ok);color:var(--ok)}
+  .pill.bad{border-color:var(--safety);color:var(--safety)}
+  .reason{color:var(--dim);font-size:13px;margin-top:10px;font-style:italic}
+  .safety-note{border-left:3px solid var(--safety);background:rgba(229,72,77,.09);
+    padding:11px 14px;border-radius:0 8px 8px 0;font-size:13.5px;margin:0 0 14px}
+  .weak-note{border-left:3px solid var(--warn);background:rgba(210,153,34,.10);
+    padding:11px 14px;border-radius:0 8px 8px 0;font-size:13.5px;margin:0 0 14px}
+  .answer{white-space:pre-wrap;word-wrap:break-word}
+  .cite{color:var(--accent);font-weight:600;font-size:.9em;
+    background:rgba(91,141,239,.13);padding:1px 5px;border-radius:4px}
+  details{margin-top:15px}
+  summary{cursor:pointer;color:var(--dim);font-size:13px;user-select:none}
+  table{width:100%;border-collapse:collapse;margin-top:11px;font-size:12.5px}
+  th{text-align:left;color:var(--dim);font-weight:600;font-size:11px;
+    text-transform:uppercase;letter-spacing:.05em;padding:6px 8px;
+    border-bottom:1px solid var(--line)}
+  td{padding:7px 8px;border-bottom:1px solid var(--line);vertical-align:top}
+  tr:last-child td{border-bottom:0}
+  .mono{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:11.5px}
+  .dot{display:inline-block;width:8px;height:8px;border-radius:50%}
+  .dot.safety{background:var(--safety)} .dot.maintenance{background:var(--maintenance)}
+  .dot.quality{background:var(--quality)}
+  .bar{height:4px;border-radius:2px;background:var(--accent);min-width:2px}
+  .spin{color:var(--dim)} .err{color:var(--safety)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Plant 4 Documentation Assistant</h1>
+  <div class="sub">Safety procedures &middot; Maintenance manuals &middot; Quality standards
+    <span class="mono" id="stat" style="margin-left:8px"></span></div>
+
+  <form id="f">
+    <input id="q" autocomplete="off" placeholder="Ask about a fault, a spec, a procedure…">
+    <button id="go">Ask</button>
+  </form>
+  <div class="examples" id="examples"></div>
+
+  <div id="out"></div>
+</div>
+
+<script>
+const EXAMPLES = [
+  "How do I clear a mold protect fault E-301?",
+  "Parts have silver streaks near the gate",
+  "What torque for M16 mold clamp bolts?",
+  "Can I run production while the FAI is in the lab?",
+  "What is the plant's vacation policy?"
+];
+const esc = s => String(s).replace(/[&<>]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
+
+fetch('/health').then(r=>r.json()).then(d=>{
+  document.getElementById('stat').textContent = `${d.chunks} chunks · ${d.dims}d`;
+}).catch(()=>{});
+
+const exEl = document.getElementById('examples');
+EXAMPLES.forEach(t => {
+  const b = document.createElement('button');
+  b.type='button'; b.className='ex'; b.textContent=t;
+  b.onclick = () => { document.getElementById('q').value=t;
+                      document.getElementById('f').requestSubmit(); };
+  exEl.appendChild(b);
+});
+
+function renderAnswer(txt){
+  let h = esc(txt);
+  h = h.replace(/\[([A-Z]{2,3}-\d{3}(?:\s*§[\d.]+)?)\]/g, '<span class="cite">$1</span>');
+  h = h.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+  return h;
+}
+
+document.getElementById('f').onsubmit = async e => {
+  e.preventDefault();
+  const q = document.getElementById('q').value.trim();
+  if(!q) return;
+  const out = document.getElementById('out'), go = document.getElementById('go');
+  go.disabled = true;
+  out.innerHTML = '<div class="card spin">Routing, retrieving, generating…</div>';
+
+  try {
+    const res = await fetch('/ask', {method:'POST',
+      headers:{'Content-Type':'application/json'}, body: JSON.stringify({question:q})});
+    if(!res.ok) throw new Error('HTTP ' + res.status);
+    const d = await res.json();
+
+    const rt = d.route, conf = d.confidence, ret = d.retrieval, cit = d.citations;
+    const badges = rt.categories.length
+      ? rt.categories.map(c=>`<span class="badge ${c}">${c}</span>`).join('')
+      : '<span class="badge none">out of scope</span>';
+
+    // ---- route + confidence panel ----
+    let html = `<div class="card">
+      <div class="lbl">Routed to</div>
+      <div class="row">${badges}
+        <span class="pill ${conf.label}">confidence <b>${conf.overall.toFixed(2)}</b> ${conf.label}</span>
+        <span class="pill">evidence <b>${ret.band}</b> · top ${ret.top.toFixed(3)}</span>
+        <span class="pill">router self-report <b>${conf.router_confidence.toFixed(2)}</b></span>
+        ${d.elapsed_ms ? `<span class="pill">${d.elapsed_ms} ms</span>` : ''}
+        ${rt.mode==='fallback' ? '<span class="pill bad">router unavailable — searched all</span>' : ''}
+      </div>
+      <div class="reason">${esc(rt.reasoning||'')}</div>
+    </div>`;
+
+    // ---- answer ----
+    html += `<div class="card"><div class="lbl">Answer</div>`;
+    if(d.safety_flagged) html += `<div class="safety-note">${esc(d.safety_note)}</div>`;
+    if(ret.band==='weak')
+      html += `<div class="weak-note">Weak retrieval match (${ret.top.toFixed(3)}) —
+               the documentation may not cover this. Treat the answer as a pointer,
+               not an authority.</div>`;
+    html += `<div class="answer">${renderAnswer(d.answer)}</div>`;
+
+    // ---- citation validation ----
+    if(cit && cit.cited.length){
+      const ok = cit.all_supported;
+      html += `<div class="row" style="margin-top:15px">
+        <span class="pill ${ok?'good':'bad'}">
+          ${ok ? 'all citations verified against retrieved context'
+               : 'UNSUPPORTED: ' + cit.unsupported.join(', ')}</span>
+        ${cit.cited.map(c=>`<span class="pill"><b>${esc(c)}</b></span>`).join('')}
+      </div>`;
+    }
+
+    // ---- retrieved chunks ----
+    if(d.chunks && d.chunks.length){
+      const max = Math.max(...d.chunks.map(c=>c.score));
+      html += `<details><summary>${d.chunks.length} excerpts retrieved — show ranking</summary>
+        <table><thead><tr><th>#</th><th>score</th><th>citation</th>
+        <th>section</th><th></th></tr></thead><tbody>`;
+      d.chunks.forEach((c,i)=>{
+        html += `<tr>
+          <td class="mono">${i+1}</td>
+          <td class="mono">${c.score.toFixed(3)}
+            <div class="bar" style="width:${(c.score/max*54).toFixed(0)}px"></div></td>
+          <td><span class="dot ${c.category}"></span>
+              <span class="mono"><b>${esc(c.citation)}</b></span></td>
+          <td>${esc(c.section_title)}</td>
+          <td style="color:var(--dim)">${esc(c.preview.slice(0,110))}…</td>
+        </tr>`;
+      });
+      html += `</tbody></table></details>`;
+    }
+    html += `</div>`;
+    out.innerHTML = html;
+  } catch(err){
+    out.innerHTML = `<div class="card err">Request failed: ${esc(err)}</div>`;
+  } finally { go.disabled = false; }
+};
+</script>
+</body>
+</html>
