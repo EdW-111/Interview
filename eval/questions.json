@@ -1,0 +1,156 @@
+[
+  {
+    "id": "q01",
+    "question": "What torque do I use on M16 mold clamp bolts?",
+    "kind": "single-hop",
+    "expected_categories": ["maintenance"],
+    "expected_citations": ["MNT-007 §3"]
+  },
+  {
+    "id": "q02",
+    "question": "Parts coming off press 4 have silver streaks near the gate. What's causing it?",
+    "kind": "cross-cutting",
+    "expected_categories": ["quality", "maintenance"],
+    "expected_citations": ["QC-004 §3", "MNT-004 §1"]
+  },
+  {
+    "id": "q03",
+    "question": "How do I clear a mold protect fault E-301?",
+    "kind": "safety-gated",
+    "expected_categories": ["maintenance", "safety"],
+    "expected_citations": ["MNT-006 §4", "SAF-001 §4"]
+  },
+  {
+    "id": "q04",
+    "question": "Can I start running production while the first article is still in the lab?",
+    "kind": "single-hop",
+    "expected_categories": ["quality"],
+    "expected_citations": ["QC-002 §4"]
+  },
+  {
+    "id": "q05",
+    "question": "The mold was running at 90 degrees. How long before I can touch it with bare hands?",
+    "kind": "single-hop",
+    "expected_categories": ["safety"],
+    "expected_citations": ["SAF-003 §2"]
+  },
+  {
+    "id": "q06",
+    "question": "What dew point should the resin dryer be running at, and when does it alarm?",
+    "kind": "single-hop",
+    "expected_categories": ["maintenance"],
+    "expected_citations": ["MNT-004 §3"]
+  },
+  {
+    "id": "q07",
+    "question": "A technician left their lock on the press and went home. How do I get it off?",
+    "kind": "single-hop",
+    "expected_categories": ["safety"],
+    "expected_citations": ["SAF-001 §8"]
+  },
+  {
+    "id": "q08",
+    "question": "What Cpk do we need on a safety characteristic?",
+    "kind": "single-hop",
+    "expected_categories": ["quality"],
+    "expected_citations": ["QC-003 §2"]
+  },
+  {
+    "id": "q09",
+    "question": "Parts are warping after ejection. Where do I start?",
+    "kind": "cross-cutting",
+    "expected_categories": ["quality", "maintenance"],
+    "expected_citations": ["QC-004 §3", "MNT-005 §2"]
+  },
+  {
+    "id": "q10",
+    "question": "The hydraulic oil looks milky. What does that mean?",
+    "kind": "single-hop",
+    "expected_categories": ["maintenance"],
+    "expected_citations": ["MNT-003 §5"]
+  },
+  {
+    "id": "q11",
+    "question": "What PPE does an operator need to purge the barrel?",
+    "kind": "single-hop",
+    "expected_categories": ["safety"],
+    "expected_citations": ["SAF-003 §3"]
+  },
+  {
+    "id": "q12",
+    "question": "Our gage R&R came back at 25 percent. Can we still use that gage?",
+    "kind": "single-hop",
+    "expected_categories": ["quality"],
+    "expected_citations": ["QC-006 §5"]
+  },
+  {
+    "id": "q13",
+    "question": "What is the crane capacity for lifting a mold, and what do I check before rigging?",
+    "kind": "single-hop",
+    "expected_categories": ["safety"],
+    "expected_citations": ["SAF-007 §7"]
+  },
+  {
+    "id": "q14",
+    "question": "If the evacuation alarm sounds while I'm in Bay 2, where do I go?",
+    "kind": "single-hop",
+    "expected_categories": ["safety"],
+    "expected_citations": ["SAF-006 §3"]
+  },
+  {
+    "id": "q15",
+    "question": "What is the maximum moisture content for polycarbonate before molding?",
+    "kind": "single-hop",
+    "expected_categories": ["maintenance"],
+    "expected_citations": ["MNT-004 §2"]
+  },
+  {
+    "id": "q16",
+    "question": "A customer just complained about a defect. How fast do we have to contain it?",
+    "kind": "single-hop",
+    "expected_categories": ["quality"],
+    "expected_citations": ["QC-007 §1"]
+  },
+  {
+    "id": "q17",
+    "question": "Oil temperature on the press is reading 62 C. Is that a problem?",
+    "kind": "single-hop",
+    "expected_categories": ["maintenance"],
+    "expected_citations": ["MNT-003 §3"]
+  },
+  {
+    "id": "q18",
+    "question": "I found a gaylord of resin on the floor with no status tag on it. What now?",
+    "kind": "single-hop",
+    "expected_categories": ["quality"],
+    "expected_citations": ["QC-001 §2"]
+  },
+  {
+    "id": "q19",
+    "question": "The light curtain on press 6 keeps tripping intermittently. Can we keep running?",
+    "kind": "single-hop",
+    "expected_categories": ["safety"],
+    "expected_citations": ["SAF-002 §8"]
+  },
+  {
+    "id": "q20",
+    "question": "How many stabilization shots do I run before pulling first article samples?",
+    "kind": "cross-cutting",
+    "expected_categories": ["quality", "maintenance"],
+    "expected_citations": ["QC-002 §2", "MNT-002 §6"]
+  },
+  {
+    "id": "q21",
+    "question": "Someone spilled hydraulic oil under press 3. What do I do?",
+    "kind": "cross-cutting",
+    "expected_categories": ["safety", "maintenance"],
+    "expected_citations": ["SAF-004 §5", "MNT-003 §4"]
+  },
+  {
+    "id": "q22",
+    "question": "What is the plant's vacation accrual policy?",
+    "kind": "out-of-scope",
+    "expected_categories": [],
+    "expected_citations": []
+  }
+]
