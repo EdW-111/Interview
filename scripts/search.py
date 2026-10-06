@@ -9,6 +9,8 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+# Corpus uses "−", "§", "°"; the default Windows console codec rejects them.
+sys.stdout.reconfigure(encoding="utf-8")
 
 from rag.store import search  # noqa: E402
 

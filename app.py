@@ -33,6 +33,7 @@ def warmup():
 
 class Query(BaseModel):
     question: str
+    role: str | None = None
 
 
 @app.get("/")
@@ -51,12 +52,13 @@ def health():
 def ask_endpoint(q: Query):
     import time
     t0 = time.time()
-    r = ask(q.question)
+    r = ask(q.question, role=q.role)
     r["elapsed_ms"] = int((time.time() - t0) * 1000)
     # Trim chunk bodies for transport; the UI shows a preview, not the full doc.
     r["chunks"] = [{
         "citation": c["citation"], "title": c["title"], "category": c["category"],
         "section_title": c["section_title"], "score": c["score"],
+        "code_hits": c.get("code_hits", []), "applies_to": c.get("applies_to", []),
         "path": c["path"], "preview": " ".join(c["text"].split())[:280],
     } for c in r["chunks"]]
     return r

@@ -5,6 +5,19 @@
     "category": "maintenance",
     "revision": "6.1",
     "effective_date": "2026-01-05",
+    "equipment": [
+      "TX-250",
+      "TX-500"
+    ],
+    "applies_to": [
+      "maintenance_tech",
+      "floor_supervisor",
+      "process_tech"
+    ],
+    "codes": [
+      "TX250",
+      "TX500"
+    ],
     "section_num": "1",
     "section_title": "Scope",
     "citation": "MNT-001 §1",
@@ -18,6 +31,16 @@
     "category": "maintenance",
     "revision": "6.1",
     "effective_date": "2026-01-05",
+    "equipment": [
+      "TX-250",
+      "TX-500"
+    ],
+    "applies_to": [
+      "maintenance_tech",
+      "floor_supervisor",
+      "process_tech"
+    ],
+    "codes": [],
     "section_num": "2",
     "section_title": "Daily — operator, start of shift",
     "citation": "MNT-001 §2",
@@ -31,6 +54,16 @@
     "category": "maintenance",
     "revision": "6.1",
     "effective_date": "2026-01-05",
+    "equipment": [
+      "TX-250",
+      "TX-500"
+    ],
+    "applies_to": [
+      "maintenance_tech",
+      "floor_supervisor",
+      "process_tech"
+    ],
+    "codes": [],
     "section_num": "3",
     "section_title": "Weekly — maintenance technician",
     "citation": "MNT-001 §3",
@@ -44,6 +77,16 @@
     "category": "maintenance",
     "revision": "6.1",
     "effective_date": "2026-01-05",
+    "equipment": [
+      "TX-250",
+      "TX-500"
+    ],
+    "applies_to": [
+      "maintenance_tech",
+      "floor_supervisor",
+      "process_tech"
+    ],
+    "codes": [],
     "section_num": "4",
     "section_title": "500 operating hours",
     "citation": "MNT-001 §4",
@@ -57,6 +100,16 @@
     "category": "maintenance",
     "revision": "6.1",
     "effective_date": "2026-01-05",
+    "equipment": [
+      "TX-250",
+      "TX-500"
+    ],
+    "applies_to": [
+      "maintenance_tech",
+      "floor_supervisor",
+      "process_tech"
+    ],
+    "codes": [],
     "section_num": "5",
     "section_title": "2,000 operating hours",
     "citation": "MNT-001 §5",
@@ -70,6 +123,16 @@
     "category": "maintenance",
     "revision": "6.1",
     "effective_date": "2026-01-05",
+    "equipment": [
+      "TX-250",
+      "TX-500"
+    ],
+    "applies_to": [
+      "maintenance_tech",
+      "floor_supervisor",
+      "process_tech"
+    ],
+    "codes": [],
     "section_num": "6",
     "section_title": "Oil analysis program",
     "citation": "MNT-001 §6",
@@ -83,6 +146,21 @@
     "category": "maintenance",
     "revision": "6.1",
     "effective_date": "2026-01-05",
+    "equipment": [
+      "TX-250",
+      "TX-500"
+    ],
+    "applies_to": [
+      "maintenance_tech",
+      "floor_supervisor",
+      "process_tech"
+    ],
+    "codes": [
+      "P1",
+      "P2",
+      "P3",
+      "P4"
+    ],
     "section_num": "7",
     "section_title": "Work order priority definitions",
     "citation": "MNT-001 §7",
@@ -96,6 +174,16 @@
     "category": "maintenance",
     "revision": "6.1",
     "effective_date": "2026-01-05",
+    "equipment": [
+      "TX-250",
+      "TX-500"
+    ],
+    "applies_to": [
+      "maintenance_tech",
+      "floor_supervisor",
+      "process_tech"
+    ],
+    "codes": [],
     "section_num": "8",
     "section_title": "PM compliance",
     "citation": "MNT-001 §8",
@@ -109,6 +197,21 @@
     "category": "maintenance",
     "revision": "4.0",
     "effective_date": "2026-04-06",
+    "equipment": [
+      "TX-250",
+      "TX-500",
+      "overhead_crane",
+      "TCU-90"
+    ],
+    "applies_to": [
+      "maintenance_tech",
+      "process_tech",
+      "floor_supervisor"
+    ],
+    "codes": [
+      "TX250",
+      "TX500"
+    ],
     "section_num": "1",
     "section_title": "Scope and roles",
     "citation": "MNT-002 §1",
@@ -122,6 +225,18 @@
     "category": "maintenance",
     "revision": "4.0",
     "effective_date": "2026-04-06",
+    "equipment": [
+      "TX-250",
+      "TX-500",
+      "overhead_crane",
+      "TCU-90"
+    ],
+    "applies_to": [
+      "maintenance_tech",
+      "process_tech",
+      "floor_supervisor"
+    ],
+    "codes": [],
     "section_num": "2",
     "section_title": "Pre-change preparation (while the press is still running)",
     "citation": "MNT-002 §2",
@@ -135,6 +250,20 @@
     "category": "maintenance",
     "revision": "4.0",
     "effective_date": "2026-04-06",
+    "equipment": [
+      "TX-250",
+      "TX-500",
+      "overhead_crane",
+      "TCU-90"
+    ],
+    "applies_to": [
+      "maintenance_tech",
+      "process_tech",
+      "floor_supervisor"
+    ],
+    "codes": [
+      "TX500"
+    ],
     "section_num": "3",
     "section_title": "Shutdown and isolation",
     "citation": "MNT-002 §3",
@@ -148,6 +277,18 @@
     "category": "maintenance",
     "revision": "4.0",
     "effective_date": "2026-04-06",
+    "equipment": [
+      "TX-250",
+      "TX-500",
+      "overhead_crane",
+      "TCU-90"
+    ],
+    "applies_to": [
+      "maintenance_tech",
+      "process_tech",
+      "floor_supervisor"
+    ],
+    "codes": [],
     "section_num": "4",
     "section_title": "Mold removal",
     "citation": "MNT-002 §4",
@@ -161,6 +302,20 @@
     "category": "maintenance",
     "revision": "4.0",
     "effective_date": "2026-04-06",
+    "equipment": [
+      "TX-250",
+      "TX-500",
+      "overhead_crane",
+      "TCU-90"
+    ],
+    "applies_to": [
+      "maintenance_tech",
+      "process_tech",
+      "floor_supervisor"
+    ],
+    "codes": [
+      "M16"
+    ],
     "section_num": "5",
     "section_title": "Mold installation",
     "citation": "MNT-002 §5",
@@ -174,6 +329,18 @@
     "category": "maintenance",
     "revision": "4.0",
     "effective_date": "2026-04-06",
+    "equipment": [
+      "TX-250",
+      "TX-500",
+      "overhead_crane",
+      "TCU-90"
+    ],
+    "applies_to": [
+      "maintenance_tech",
+      "process_tech",
+      "floor_supervisor"
+    ],
+    "codes": [],
     "section_num": "6",
     "section_title": "Startup",
     "citation": "MNT-002 §6",
@@ -187,6 +354,18 @@
     "category": "maintenance",
     "revision": "4.0",
     "effective_date": "2026-04-06",
+    "equipment": [
+      "TX-250",
+      "TX-500",
+      "overhead_crane",
+      "TCU-90"
+    ],
+    "applies_to": [
+      "maintenance_tech",
+      "process_tech",
+      "floor_supervisor"
+    ],
+    "codes": [],
     "section_num": "7",
     "section_title": "Changeover record",
     "citation": "MNT-002 §7",
@@ -200,6 +379,20 @@
     "category": "maintenance",
     "revision": "4.0",
     "effective_date": "2026-04-06",
+    "equipment": [
+      "TX-250",
+      "TX-500",
+      "overhead_crane",
+      "TCU-90"
+    ],
+    "applies_to": [
+      "maintenance_tech",
+      "process_tech",
+      "floor_supervisor"
+    ],
+    "codes": [
+      "RP5"
+    ],
     "section_num": "8",
     "section_title": "Post-run tool care",
     "citation": "MNT-002 §8",
@@ -213,6 +406,15 @@
     "category": "maintenance",
     "revision": "5.2",
     "effective_date": "2025-12-15",
+    "equipment": [
+      "TX-250",
+      "TX-500"
+    ],
+    "applies_to": [
+      "maintenance_tech",
+      "floor_supervisor"
+    ],
+    "codes": [],
     "section_num": "1",
     "section_title": "Before you start",
     "citation": "MNT-003 §1",
@@ -226,6 +428,15 @@
     "category": "maintenance",
     "revision": "5.2",
     "effective_date": "2025-12-15",
+    "equipment": [
+      "TX-250",
+      "TX-500"
+    ],
+    "applies_to": [
+      "maintenance_tech",
+      "floor_supervisor"
+    ],
+    "codes": [],
     "section_num": "2",
     "section_title": "Symptom → cause index",
     "citation": "MNT-003 §2",
@@ -239,6 +450,18 @@
     "category": "maintenance",
     "revision": "5.2",
     "effective_date": "2025-12-15",
+    "equipment": [
+      "TX-250",
+      "TX-500"
+    ],
+    "applies_to": [
+      "maintenance_tech",
+      "floor_supervisor"
+    ],
+    "codes": [
+      "TX250",
+      "TX500"
+    ],
     "section_num": "3",
     "section_title": "Pressure and temperature reference",
     "citation": "MNT-003 §3",
@@ -252,6 +475,19 @@
     "category": "maintenance",
     "revision": "5.2",
     "effective_date": "2025-12-15",
+    "equipment": [
+      "TX-250",
+      "TX-500"
+    ],
+    "applies_to": [
+      "maintenance_tech",
+      "floor_supervisor"
+    ],
+    "codes": [
+      "P1",
+      "P3",
+      "P4"
+    ],
     "section_num": "4",
     "section_title": "Leaks",
     "citation": "MNT-003 §4",
@@ -265,6 +501,15 @@
     "category": "maintenance",
     "revision": "5.2",
     "effective_date": "2025-12-15",
+    "equipment": [
+      "TX-250",
+      "TX-500"
+    ],
+    "applies_to": [
+      "maintenance_tech",
+      "floor_supervisor"
+    ],
+    "codes": [],
     "section_num": "5",
     "section_title": "Water in oil",
     "citation": "MNT-003 §5",
@@ -278,6 +523,20 @@
     "category": "maintenance",
     "revision": "5.2",
     "effective_date": "2025-12-15",
+    "equipment": [
+      "TX-250",
+      "TX-500"
+    ],
+    "applies_to": [
+      "maintenance_tech",
+      "floor_supervisor"
+    ],
+    "codes": [
+      "BV1",
+      "HV3",
+      "PG1",
+      "TX500"
+    ],
     "section_num": "6",
     "section_title": "Accumulator service",
     "citation": "MNT-003 §6",
@@ -291,6 +550,15 @@
     "category": "maintenance",
     "revision": "5.2",
     "effective_date": "2025-12-15",
+    "equipment": [
+      "TX-250",
+      "TX-500"
+    ],
+    "applies_to": [
+      "maintenance_tech",
+      "floor_supervisor"
+    ],
+    "codes": [],
     "section_num": "7",
     "section_title": "Escalation",
     "citation": "MNT-003 §7",
@@ -304,6 +572,20 @@
     "category": "maintenance",
     "revision": "3.4",
     "effective_date": "2026-02-23",
+    "equipment": [
+      "AD-300",
+      "vacuum_conveying",
+      "GR-40"
+    ],
+    "applies_to": [
+      "maintenance_tech",
+      "process_tech",
+      "material_handler"
+    ],
+    "codes": [
+      "PBT",
+      "PET"
+    ],
     "section_num": "1",
     "section_title": "Why drying matters",
     "citation": "MNT-004 §1",
@@ -317,6 +599,24 @@
     "category": "maintenance",
     "revision": "3.4",
     "effective_date": "2026-02-23",
+    "equipment": [
+      "AD-300",
+      "vacuum_conveying",
+      "GR-40"
+    ],
+    "applies_to": [
+      "maintenance_tech",
+      "process_tech",
+      "material_handler"
+    ],
+    "codes": [
+      "ABS",
+      "PA66",
+      "PBT",
+      "PC",
+      "POM",
+      "PP"
+    ],
     "section_num": "2",
     "section_title": "Drying parameters by material",
     "citation": "MNT-004 §2",
@@ -330,6 +630,17 @@
     "category": "maintenance",
     "revision": "3.4",
     "effective_date": "2026-02-23",
+    "equipment": [
+      "AD-300",
+      "vacuum_conveying",
+      "GR-40"
+    ],
+    "applies_to": [
+      "maintenance_tech",
+      "process_tech",
+      "material_handler"
+    ],
+    "codes": [],
     "section_num": "3",
     "section_title": "Dryer setpoints and alarms — AD-300",
     "citation": "MNT-004 §3",
@@ -343,6 +654,17 @@
     "category": "maintenance",
     "revision": "3.4",
     "effective_date": "2026-02-23",
+    "equipment": [
+      "AD-300",
+      "vacuum_conveying",
+      "GR-40"
+    ],
+    "applies_to": [
+      "maintenance_tech",
+      "process_tech",
+      "material_handler"
+    ],
+    "codes": [],
     "section_num": "4",
     "section_title": "Maintenance schedule",
     "citation": "MNT-004 §4",
@@ -356,6 +678,17 @@
     "category": "maintenance",
     "revision": "3.4",
     "effective_date": "2026-02-23",
+    "equipment": [
+      "AD-300",
+      "vacuum_conveying",
+      "GR-40"
+    ],
+    "applies_to": [
+      "maintenance_tech",
+      "process_tech",
+      "material_handler"
+    ],
+    "codes": [],
     "section_num": "5",
     "section_title": "Conveying system",
     "citation": "MNT-004 §5",
@@ -369,6 +702,17 @@
     "category": "maintenance",
     "revision": "3.4",
     "effective_date": "2026-02-23",
+    "equipment": [
+      "AD-300",
+      "vacuum_conveying",
+      "GR-40"
+    ],
+    "applies_to": [
+      "maintenance_tech",
+      "process_tech",
+      "material_handler"
+    ],
+    "codes": [],
     "section_num": "6",
     "section_title": "Safety notes",
     "citation": "MNT-004 §6",
@@ -382,6 +726,16 @@
     "category": "maintenance",
     "revision": "2.8",
     "effective_date": "2026-05-11",
+    "equipment": [
+      "TCU-90",
+      "chiller_loop",
+      "cooling_tower"
+    ],
+    "applies_to": [
+      "maintenance_tech",
+      "process_tech"
+    ],
+    "codes": [],
     "section_num": "1",
     "section_title": "System overview",
     "citation": "MNT-005 §1",
@@ -395,6 +749,16 @@
     "category": "maintenance",
     "revision": "2.8",
     "effective_date": "2026-05-11",
+    "equipment": [
+      "TCU-90",
+      "chiller_loop",
+      "cooling_tower"
+    ],
+    "applies_to": [
+      "maintenance_tech",
+      "process_tech"
+    ],
+    "codes": [],
     "section_num": "2",
     "section_title": "TCU-90 operating parameters",
     "citation": "MNT-005 §2",
@@ -408,6 +772,16 @@
     "category": "maintenance",
     "revision": "2.8",
     "effective_date": "2026-05-11",
+    "equipment": [
+      "TCU-90",
+      "chiller_loop",
+      "cooling_tower"
+    ],
+    "applies_to": [
+      "maintenance_tech",
+      "process_tech"
+    ],
+    "codes": [],
     "section_num": "3",
     "section_title": "Troubleshooting",
     "citation": "MNT-005 §3",
@@ -421,6 +795,16 @@
     "category": "maintenance",
     "revision": "2.8",
     "effective_date": "2026-05-11",
+    "equipment": [
+      "TCU-90",
+      "chiller_loop",
+      "cooling_tower"
+    ],
+    "applies_to": [
+      "maintenance_tech",
+      "process_tech"
+    ],
+    "codes": [],
     "section_num": "4",
     "section_title": "Water treatment",
     "citation": "MNT-005 §4",
@@ -434,6 +818,16 @@
     "category": "maintenance",
     "revision": "2.8",
     "effective_date": "2026-05-11",
+    "equipment": [
+      "TCU-90",
+      "chiller_loop",
+      "cooling_tower"
+    ],
+    "applies_to": [
+      "maintenance_tech",
+      "process_tech"
+    ],
+    "codes": [],
     "section_num": "5",
     "section_title": "Maintenance schedule",
     "citation": "MNT-005 §5",
@@ -447,6 +841,16 @@
     "category": "maintenance",
     "revision": "2.8",
     "effective_date": "2026-05-11",
+    "equipment": [
+      "TCU-90",
+      "chiller_loop",
+      "cooling_tower"
+    ],
+    "applies_to": [
+      "maintenance_tech",
+      "process_tech"
+    ],
+    "codes": [],
     "section_num": "6",
     "section_title": "Safety",
     "citation": "MNT-005 §6",
@@ -460,6 +864,21 @@
     "category": "maintenance",
     "revision": "7.0",
     "effective_date": "2026-06-01",
+    "equipment": [
+      "TX-250",
+      "TX-500",
+      "AD-300",
+      "TCU-90",
+      "PR-12",
+      "GR-40"
+    ],
+    "applies_to": [
+      "operator",
+      "process_tech",
+      "maintenance_tech",
+      "floor_supervisor"
+    ],
+    "codes": [],
     "section_num": "1",
     "section_title": "How to use this document",
     "citation": "MNT-006 §1",
@@ -473,6 +892,30 @@
     "category": "maintenance",
     "revision": "7.0",
     "effective_date": "2026-06-01",
+    "equipment": [
+      "TX-250",
+      "TX-500",
+      "AD-300",
+      "TCU-90",
+      "PR-12",
+      "GR-40"
+    ],
+    "applies_to": [
+      "operator",
+      "process_tech",
+      "maintenance_tech",
+      "floor_supervisor"
+    ],
+    "codes": [
+      "E101",
+      "E102",
+      "E103",
+      "E104",
+      "E105",
+      "E106",
+      "E107",
+      "P1"
+    ],
     "section_num": "2",
     "section_title": "Safety faults — `E-1xx` (clearance level C)",
     "citation": "MNT-006 §2",
@@ -486,6 +929,29 @@
     "category": "maintenance",
     "revision": "7.0",
     "effective_date": "2026-06-01",
+    "equipment": [
+      "TX-250",
+      "TX-500",
+      "AD-300",
+      "TCU-90",
+      "PR-12",
+      "GR-40"
+    ],
+    "applies_to": [
+      "operator",
+      "process_tech",
+      "maintenance_tech",
+      "floor_supervisor"
+    ],
+    "codes": [
+      "E201",
+      "E202",
+      "E203",
+      "E204",
+      "E205",
+      "E206",
+      "E207"
+    ],
     "section_num": "3",
     "section_title": "Hydraulic and drive faults — `E-2xx` (level B, C where noted)",
     "citation": "MNT-006 §3",
@@ -499,6 +965,27 @@
     "category": "maintenance",
     "revision": "7.0",
     "effective_date": "2026-06-01",
+    "equipment": [
+      "TX-250",
+      "TX-500",
+      "AD-300",
+      "TCU-90",
+      "PR-12",
+      "GR-40"
+    ],
+    "applies_to": [
+      "operator",
+      "process_tech",
+      "maintenance_tech",
+      "floor_supervisor"
+    ],
+    "codes": [
+      "E301",
+      "E302",
+      "E303",
+      "E304",
+      "E305"
+    ],
     "section_num": "4",
     "section_title": "Clamp and mold faults — `E-3xx` (level B)",
     "citation": "MNT-006 §4",
@@ -512,6 +999,27 @@
     "category": "maintenance",
     "revision": "7.0",
     "effective_date": "2026-06-01",
+    "equipment": [
+      "TX-250",
+      "TX-500",
+      "AD-300",
+      "TCU-90",
+      "PR-12",
+      "GR-40"
+    ],
+    "applies_to": [
+      "operator",
+      "process_tech",
+      "maintenance_tech",
+      "floor_supervisor"
+    ],
+    "codes": [
+      "E401",
+      "E402",
+      "E403",
+      "E404",
+      "E405"
+    ],
     "section_num": "5",
     "section_title": "Barrel and heat faults — `E-4xx` (level B)",
     "citation": "MNT-006 §5",
@@ -525,6 +1033,27 @@
     "category": "maintenance",
     "revision": "7.0",
     "effective_date": "2026-06-01",
+    "equipment": [
+      "TX-250",
+      "TX-500",
+      "AD-300",
+      "TCU-90",
+      "PR-12",
+      "GR-40"
+    ],
+    "applies_to": [
+      "operator",
+      "process_tech",
+      "maintenance_tech",
+      "floor_supervisor"
+    ],
+    "codes": [
+      "D01",
+      "D02",
+      "D03",
+      "D04",
+      "D05"
+    ],
     "section_num": "6",
     "section_title": "Auxiliary faults — Dryer — `D-xx` (level A/B)",
     "citation": "MNT-006 §6",
@@ -538,6 +1067,26 @@
     "category": "maintenance",
     "revision": "7.0",
     "effective_date": "2026-06-01",
+    "equipment": [
+      "TX-250",
+      "TX-500",
+      "AD-300",
+      "TCU-90",
+      "PR-12",
+      "GR-40"
+    ],
+    "applies_to": [
+      "operator",
+      "process_tech",
+      "maintenance_tech",
+      "floor_supervisor"
+    ],
+    "codes": [
+      "T01",
+      "T02",
+      "T03",
+      "T04"
+    ],
     "section_num": "6",
     "section_title": "Auxiliary faults — TCU / chiller — `T-xx` (level A/B)",
     "citation": "MNT-006 §6",
@@ -551,6 +1100,26 @@
     "category": "maintenance",
     "revision": "7.0",
     "effective_date": "2026-06-01",
+    "equipment": [
+      "TX-250",
+      "TX-500",
+      "AD-300",
+      "TCU-90",
+      "PR-12",
+      "GR-40"
+    ],
+    "applies_to": [
+      "operator",
+      "process_tech",
+      "maintenance_tech",
+      "floor_supervisor"
+    ],
+    "codes": [
+      "R01",
+      "R02",
+      "R03",
+      "R04"
+    ],
     "section_num": "6",
     "section_title": "Auxiliary faults — Robot PR-12 — `R-xx` (level B)",
     "citation": "MNT-006 §6",
@@ -564,6 +1133,21 @@
     "category": "maintenance",
     "revision": "7.0",
     "effective_date": "2026-06-01",
+    "equipment": [
+      "TX-250",
+      "TX-500",
+      "AD-300",
+      "TCU-90",
+      "PR-12",
+      "GR-40"
+    ],
+    "applies_to": [
+      "operator",
+      "process_tech",
+      "maintenance_tech",
+      "floor_supervisor"
+    ],
+    "codes": [],
     "section_num": "7",
     "section_title": "When a code is not listed",
     "citation": "MNT-006 §7",
@@ -577,6 +1161,27 @@
     "category": "maintenance",
     "revision": "4.1",
     "effective_date": "2026-03-02",
+    "equipment": [
+      "TX-250",
+      "TX-500",
+      "PR-12",
+      "GR-40",
+      "overhead_crane"
+    ],
+    "applies_to": [
+      "maintenance_tech",
+      "process_tech"
+    ],
+    "codes": [
+      "GR40",
+      "H1",
+      "L1",
+      "L2",
+      "L3",
+      "L4",
+      "L5",
+      "L6"
+    ],
     "section_num": "1",
     "section_title": "Lubricant list",
     "citation": "MNT-007 §1",
@@ -590,6 +1195,26 @@
     "category": "maintenance",
     "revision": "4.1",
     "effective_date": "2026-03-02",
+    "equipment": [
+      "TX-250",
+      "TX-500",
+      "PR-12",
+      "GR-40",
+      "overhead_crane"
+    ],
+    "applies_to": [
+      "maintenance_tech",
+      "process_tech"
+    ],
+    "codes": [
+      "GR40",
+      "L1",
+      "L2",
+      "L3",
+      "L4",
+      "L5",
+      "L6"
+    ],
     "section_num": "2",
     "section_title": "Lubrication chart",
     "citation": "MNT-007 §2",
@@ -603,6 +1228,18 @@
     "category": "maintenance",
     "revision": "4.1",
     "effective_date": "2026-03-02",
+    "equipment": [
+      "TX-250",
+      "TX-500",
+      "PR-12",
+      "GR-40",
+      "overhead_crane"
+    ],
+    "applies_to": [
+      "maintenance_tech",
+      "process_tech"
+    ],
+    "codes": [],
     "section_num": "3",
     "section_title": "Torque specifications",
     "citation": "MNT-007 §3",
@@ -616,6 +1253,25 @@
     "category": "maintenance",
     "revision": "4.1",
     "effective_date": "2026-03-02",
+    "equipment": [
+      "TX-250",
+      "TX-500",
+      "PR-12",
+      "GR-40",
+      "overhead_crane"
+    ],
+    "applies_to": [
+      "maintenance_tech",
+      "process_tech"
+    ],
+    "codes": [
+      "M12",
+      "M16",
+      "M20",
+      "M24",
+      "TX250",
+      "TX500"
+    ],
     "section_num": "3",
     "section_title": "Torque specifications — Mold clamping — grade 12.9 bolts",
     "citation": "MNT-007 §3",
@@ -629,6 +1285,22 @@
     "category": "maintenance",
     "revision": "4.1",
     "effective_date": "2026-03-02",
+    "equipment": [
+      "TX-250",
+      "TX-500",
+      "PR-12",
+      "GR-40",
+      "overhead_crane"
+    ],
+    "applies_to": [
+      "maintenance_tech",
+      "process_tech"
+    ],
+    "codes": [
+      "M10",
+      "M6",
+      "M8"
+    ],
     "section_num": "3",
     "section_title": "Torque specifications — Other fasteners",
     "citation": "MNT-007 §3",
@@ -642,6 +1314,18 @@
     "category": "maintenance",
     "revision": "4.1",
     "effective_date": "2026-03-02",
+    "equipment": [
+      "TX-250",
+      "TX-500",
+      "PR-12",
+      "GR-40",
+      "overhead_crane"
+    ],
+    "applies_to": [
+      "maintenance_tech",
+      "process_tech"
+    ],
+    "codes": [],
     "section_num": "3",
     "section_title": "Torque specifications — Bolt condition",
     "citation": "MNT-007 §3",
@@ -655,6 +1339,18 @@
     "category": "maintenance",
     "revision": "4.1",
     "effective_date": "2026-03-02",
+    "equipment": [
+      "TX-250",
+      "TX-500",
+      "PR-12",
+      "GR-40",
+      "overhead_crane"
+    ],
+    "applies_to": [
+      "maintenance_tech",
+      "process_tech"
+    ],
+    "codes": [],
     "section_num": "4",
     "section_title": "Torque wrench control",
     "citation": "MNT-007 §4",
@@ -668,6 +1364,16 @@
     "category": "quality",
     "revision": "3.2",
     "effective_date": "2026-01-26",
+    "equipment": [
+      "receiving",
+      "QC_lab"
+    ],
+    "applies_to": [
+      "material_handler",
+      "quality_tech",
+      "floor_supervisor"
+    ],
+    "codes": [],
     "section_num": "1",
     "section_title": "Purpose",
     "citation": "QC-001 §1",
@@ -681,6 +1387,16 @@
     "category": "quality",
     "revision": "3.2",
     "effective_date": "2026-01-26",
+    "equipment": [
+      "receiving",
+      "QC_lab"
+    ],
+    "applies_to": [
+      "material_handler",
+      "quality_tech",
+      "floor_supervisor"
+    ],
+    "codes": [],
     "section_num": "2",
     "section_title": "Material status states",
     "citation": "QC-001 §2",
@@ -694,6 +1410,16 @@
     "category": "quality",
     "revision": "3.2",
     "effective_date": "2026-01-26",
+    "equipment": [
+      "receiving",
+      "QC_lab"
+    ],
+    "applies_to": [
+      "material_handler",
+      "quality_tech",
+      "floor_supervisor"
+    ],
+    "codes": [],
     "section_num": "3",
     "section_title": "Receiving checks — performed on 100% of deliveries",
     "citation": "QC-001 §3",
@@ -707,6 +1433,16 @@
     "category": "quality",
     "revision": "3.2",
     "effective_date": "2026-01-26",
+    "equipment": [
+      "receiving",
+      "QC_lab"
+    ],
+    "applies_to": [
+      "material_handler",
+      "quality_tech",
+      "floor_supervisor"
+    ],
+    "codes": [],
     "section_num": "4",
     "section_title": "Certificate of Analysis review — QC",
     "citation": "QC-001 §4",
@@ -720,6 +1456,23 @@
     "category": "quality",
     "revision": "3.2",
     "effective_date": "2026-01-26",
+    "equipment": [
+      "receiving",
+      "QC_lab"
+    ],
+    "applies_to": [
+      "material_handler",
+      "quality_tech",
+      "floor_supervisor"
+    ],
+    "codes": [
+      "ABS",
+      "D65",
+      "PA66",
+      "PBT",
+      "PC",
+      "POM"
+    ],
     "section_num": "5",
     "section_title": "Sampling and testing",
     "citation": "QC-001 §5",
@@ -733,6 +1486,24 @@
     "category": "quality",
     "revision": "3.2",
     "effective_date": "2026-01-26",
+    "equipment": [
+      "receiving",
+      "QC_lab"
+    ],
+    "applies_to": [
+      "material_handler",
+      "quality_tech",
+      "floor_supervisor"
+    ],
+    "codes": [
+      "ABS",
+      "F3",
+      "PA66",
+      "PBT",
+      "PC",
+      "POM",
+      "PP"
+    ],
     "section_num": "6",
     "section_title": "Shelf life and stock rotation",
     "citation": "QC-001 §6",
@@ -746,6 +1517,16 @@
     "category": "quality",
     "revision": "3.2",
     "effective_date": "2026-01-26",
+    "equipment": [
+      "receiving",
+      "QC_lab"
+    ],
+    "applies_to": [
+      "material_handler",
+      "quality_tech",
+      "floor_supervisor"
+    ],
+    "codes": [],
     "section_num": "7",
     "section_title": "Release",
     "citation": "QC-001 §7",
@@ -759,6 +1540,16 @@
     "category": "quality",
     "revision": "3.2",
     "effective_date": "2026-01-26",
+    "equipment": [
+      "receiving",
+      "QC_lab"
+    ],
+    "applies_to": [
+      "material_handler",
+      "quality_tech",
+      "floor_supervisor"
+    ],
+    "codes": [],
     "section_num": "8",
     "section_title": "Rejection",
     "citation": "QC-001 §8",
@@ -772,6 +1563,18 @@
     "category": "quality",
     "revision": "4.3",
     "effective_date": "2026-04-13",
+    "equipment": [
+      "TX-250",
+      "TX-500",
+      "QC_lab",
+      "CMM"
+    ],
+    "applies_to": [
+      "quality_tech",
+      "process_tech",
+      "floor_supervisor"
+    ],
+    "codes": [],
     "section_num": "1",
     "section_title": "When an FAI is required",
     "citation": "QC-002 §1",
@@ -785,6 +1588,25 @@
     "category": "quality",
     "revision": "4.3",
     "effective_date": "2026-04-13",
+    "equipment": [
+      "TX-250",
+      "TX-500",
+      "QC_lab",
+      "CMM"
+    ],
+    "applies_to": [
+      "quality_tech",
+      "process_tech",
+      "floor_supervisor"
+    ],
+    "codes": [
+      "ABS",
+      "PA66",
+      "PBT",
+      "PC",
+      "POM",
+      "PP"
+    ],
     "section_num": "2",
     "section_title": "Sample preparation",
     "citation": "QC-002 §2",
@@ -798,6 +1620,18 @@
     "category": "quality",
     "revision": "4.3",
     "effective_date": "2026-04-13",
+    "equipment": [
+      "TX-250",
+      "TX-500",
+      "QC_lab",
+      "CMM"
+    ],
+    "applies_to": [
+      "quality_tech",
+      "process_tech",
+      "floor_supervisor"
+    ],
+    "codes": [],
     "section_num": "3",
     "section_title": "What is inspected",
     "citation": "QC-002 §3",
@@ -811,6 +1645,18 @@
     "category": "quality",
     "revision": "4.3",
     "effective_date": "2026-04-13",
+    "equipment": [
+      "TX-250",
+      "TX-500",
+      "QC_lab",
+      "CMM"
+    ],
+    "applies_to": [
+      "quality_tech",
+      "process_tech",
+      "floor_supervisor"
+    ],
+    "codes": [],
     "section_num": "4",
     "section_title": "Disposition",
     "citation": "QC-002 §4",
@@ -824,6 +1670,18 @@
     "category": "quality",
     "revision": "4.3",
     "effective_date": "2026-04-13",
+    "equipment": [
+      "TX-250",
+      "TX-500",
+      "QC_lab",
+      "CMM"
+    ],
+    "applies_to": [
+      "quality_tech",
+      "process_tech",
+      "floor_supervisor"
+    ],
+    "codes": [],
     "section_num": "5",
     "section_title": "Last-off sample",
     "citation": "QC-002 §5",
@@ -837,6 +1695,18 @@
     "category": "quality",
     "revision": "4.3",
     "effective_date": "2026-04-13",
+    "equipment": [
+      "TX-250",
+      "TX-500",
+      "QC_lab",
+      "CMM"
+    ],
+    "applies_to": [
+      "quality_tech",
+      "process_tech",
+      "floor_supervisor"
+    ],
+    "codes": [],
     "section_num": "6",
     "section_title": "Records",
     "citation": "QC-002 §6",
@@ -850,6 +1720,18 @@
     "category": "quality",
     "revision": "5.1",
     "effective_date": "2026-05-04",
+    "equipment": [
+      "TX-250",
+      "TX-500",
+      "QC_lab"
+    ],
+    "applies_to": [
+      "operator",
+      "quality_tech",
+      "process_tech",
+      "floor_supervisor"
+    ],
+    "codes": [],
     "section_num": "1",
     "section_title": "Sampling plan",
     "citation": "QC-003 §1",
@@ -863,6 +1745,18 @@
     "category": "quality",
     "revision": "5.1",
     "effective_date": "2026-05-04",
+    "equipment": [
+      "TX-250",
+      "TX-500",
+      "QC_lab"
+    ],
+    "applies_to": [
+      "operator",
+      "quality_tech",
+      "process_tech",
+      "floor_supervisor"
+    ],
+    "codes": [],
     "section_num": "2",
     "section_title": "Capability requirements",
     "citation": "QC-003 §2",
@@ -876,6 +1770,18 @@
     "category": "quality",
     "revision": "5.1",
     "effective_date": "2026-05-04",
+    "equipment": [
+      "TX-250",
+      "TX-500",
+      "QC_lab"
+    ],
+    "applies_to": [
+      "operator",
+      "quality_tech",
+      "process_tech",
+      "floor_supervisor"
+    ],
+    "codes": [],
     "section_num": "3",
     "section_title": "Out-of-control rules",
     "citation": "QC-003 §3",
@@ -889,6 +1795,18 @@
     "category": "quality",
     "revision": "5.1",
     "effective_date": "2026-05-04",
+    "equipment": [
+      "TX-250",
+      "TX-500",
+      "QC_lab"
+    ],
+    "applies_to": [
+      "operator",
+      "quality_tech",
+      "process_tech",
+      "floor_supervisor"
+    ],
+    "codes": [],
     "section_num": "4",
     "section_title": "Operator response to an out-of-control signal",
     "citation": "QC-003 §4",
@@ -902,6 +1820,18 @@
     "category": "quality",
     "revision": "5.1",
     "effective_date": "2026-05-04",
+    "equipment": [
+      "TX-250",
+      "TX-500",
+      "QC_lab"
+    ],
+    "applies_to": [
+      "operator",
+      "quality_tech",
+      "process_tech",
+      "floor_supervisor"
+    ],
+    "codes": [],
     "section_num": "5",
     "section_title": "Prohibited practices",
     "citation": "QC-003 §5",
@@ -915,6 +1845,18 @@
     "category": "quality",
     "revision": "5.1",
     "effective_date": "2026-05-04",
+    "equipment": [
+      "TX-250",
+      "TX-500",
+      "QC_lab"
+    ],
+    "applies_to": [
+      "operator",
+      "quality_tech",
+      "process_tech",
+      "floor_supervisor"
+    ],
+    "codes": [],
     "section_num": "6",
     "section_title": "Process adjustment authority",
     "citation": "QC-003 §6",
@@ -928,6 +1870,18 @@
     "category": "quality",
     "revision": "5.1",
     "effective_date": "2026-05-04",
+    "equipment": [
+      "TX-250",
+      "TX-500",
+      "QC_lab"
+    ],
+    "applies_to": [
+      "operator",
+      "quality_tech",
+      "process_tech",
+      "floor_supervisor"
+    ],
+    "codes": [],
     "section_num": "7",
     "section_title": "Charting and data retention",
     "citation": "QC-003 §7",
@@ -941,6 +1895,19 @@
     "category": "quality",
     "revision": "6.2",
     "effective_date": "2026-06-15",
+    "equipment": [
+      "QC_lab",
+      "all_cells"
+    ],
+    "applies_to": [
+      "operator",
+      "quality_tech",
+      "floor_supervisor",
+      "process_tech"
+    ],
+    "codes": [
+      "D65"
+    ],
     "section_num": "1",
     "section_title": "Inspection conditions",
     "citation": "QC-004 §1",
@@ -954,6 +1921,17 @@
     "category": "quality",
     "revision": "6.2",
     "effective_date": "2026-06-15",
+    "equipment": [
+      "QC_lab",
+      "all_cells"
+    ],
+    "applies_to": [
+      "operator",
+      "quality_tech",
+      "floor_supervisor",
+      "process_tech"
+    ],
+    "codes": [],
     "section_num": "2",
     "section_title": "Cosmetic zones",
     "citation": "QC-004 §2",
@@ -967,6 +1945,17 @@
     "category": "quality",
     "revision": "6.2",
     "effective_date": "2026-06-15",
+    "equipment": [
+      "QC_lab",
+      "all_cells"
+    ],
+    "applies_to": [
+      "operator",
+      "quality_tech",
+      "floor_supervisor",
+      "process_tech"
+    ],
+    "codes": [],
     "section_num": "3",
     "section_title": "Defect catalog",
     "citation": "QC-004 §3",
@@ -980,6 +1969,17 @@
     "category": "quality",
     "revision": "6.2",
     "effective_date": "2026-06-15",
+    "equipment": [
+      "QC_lab",
+      "all_cells"
+    ],
+    "applies_to": [
+      "operator",
+      "quality_tech",
+      "floor_supervisor",
+      "process_tech"
+    ],
+    "codes": [],
     "section_num": "3",
     "section_title": "Defect catalog — Splay (silver streaking)",
     "citation": "QC-004 §3",
@@ -993,6 +1993,17 @@
     "category": "quality",
     "revision": "6.2",
     "effective_date": "2026-06-15",
+    "equipment": [
+      "QC_lab",
+      "all_cells"
+    ],
+    "applies_to": [
+      "operator",
+      "quality_tech",
+      "floor_supervisor",
+      "process_tech"
+    ],
+    "codes": [],
     "section_num": "3",
     "section_title": "Defect catalog — Short shot",
     "citation": "QC-004 §3",
@@ -1006,6 +2017,17 @@
     "category": "quality",
     "revision": "6.2",
     "effective_date": "2026-06-15",
+    "equipment": [
+      "QC_lab",
+      "all_cells"
+    ],
+    "applies_to": [
+      "operator",
+      "quality_tech",
+      "floor_supervisor",
+      "process_tech"
+    ],
+    "codes": [],
     "section_num": "3",
     "section_title": "Defect catalog — Flash",
     "citation": "QC-004 §3",
@@ -1019,6 +2041,17 @@
     "category": "quality",
     "revision": "6.2",
     "effective_date": "2026-06-15",
+    "equipment": [
+      "QC_lab",
+      "all_cells"
+    ],
+    "applies_to": [
+      "operator",
+      "quality_tech",
+      "floor_supervisor",
+      "process_tech"
+    ],
+    "codes": [],
     "section_num": "3",
     "section_title": "Defect catalog — Sink marks",
     "citation": "QC-004 §3",
@@ -1032,6 +2065,17 @@
     "category": "quality",
     "revision": "6.2",
     "effective_date": "2026-06-15",
+    "equipment": [
+      "QC_lab",
+      "all_cells"
+    ],
+    "applies_to": [
+      "operator",
+      "quality_tech",
+      "floor_supervisor",
+      "process_tech"
+    ],
+    "codes": [],
     "section_num": "3",
     "section_title": "Defect catalog — Weld / knit lines",
     "citation": "QC-004 §3",
@@ -1045,6 +2089,17 @@
     "category": "quality",
     "revision": "6.2",
     "effective_date": "2026-06-15",
+    "equipment": [
+      "QC_lab",
+      "all_cells"
+    ],
+    "applies_to": [
+      "operator",
+      "quality_tech",
+      "floor_supervisor",
+      "process_tech"
+    ],
+    "codes": [],
     "section_num": "3",
     "section_title": "Defect catalog — Burn marks (dieseling)",
     "citation": "QC-004 §3",
@@ -1058,6 +2113,17 @@
     "category": "quality",
     "revision": "6.2",
     "effective_date": "2026-06-15",
+    "equipment": [
+      "QC_lab",
+      "all_cells"
+    ],
+    "applies_to": [
+      "operator",
+      "quality_tech",
+      "floor_supervisor",
+      "process_tech"
+    ],
+    "codes": [],
     "section_num": "3",
     "section_title": "Defect catalog — Warp / dimensional distortion",
     "citation": "QC-004 §3",
@@ -1071,6 +2137,17 @@
     "category": "quality",
     "revision": "6.2",
     "effective_date": "2026-06-15",
+    "equipment": [
+      "QC_lab",
+      "all_cells"
+    ],
+    "applies_to": [
+      "operator",
+      "quality_tech",
+      "floor_supervisor",
+      "process_tech"
+    ],
+    "codes": [],
     "section_num": "3",
     "section_title": "Defect catalog — Black specks / contamination",
     "citation": "QC-004 §3",
@@ -1084,6 +2161,17 @@
     "category": "quality",
     "revision": "6.2",
     "effective_date": "2026-06-15",
+    "equipment": [
+      "QC_lab",
+      "all_cells"
+    ],
+    "applies_to": [
+      "operator",
+      "quality_tech",
+      "floor_supervisor",
+      "process_tech"
+    ],
+    "codes": [],
     "section_num": "3",
     "section_title": "Defect catalog — Jetting",
     "citation": "QC-004 §3",
@@ -1097,6 +2185,17 @@
     "category": "quality",
     "revision": "6.2",
     "effective_date": "2026-06-15",
+    "equipment": [
+      "QC_lab",
+      "all_cells"
+    ],
+    "applies_to": [
+      "operator",
+      "quality_tech",
+      "floor_supervisor",
+      "process_tech"
+    ],
+    "codes": [],
     "section_num": "3",
     "section_title": "Defect catalog — Drag marks / scuffing",
     "citation": "QC-004 §3",
@@ -1110,6 +2209,19 @@
     "category": "quality",
     "revision": "6.2",
     "effective_date": "2026-06-15",
+    "equipment": [
+      "QC_lab",
+      "all_cells"
+    ],
+    "applies_to": [
+      "operator",
+      "quality_tech",
+      "floor_supervisor",
+      "process_tech"
+    ],
+    "codes": [
+      "D65"
+    ],
     "section_num": "3",
     "section_title": "Defect catalog — Color variation",
     "citation": "QC-004 §3",
@@ -1123,6 +2235,17 @@
     "category": "quality",
     "revision": "6.2",
     "effective_date": "2026-06-15",
+    "equipment": [
+      "QC_lab",
+      "all_cells"
+    ],
+    "applies_to": [
+      "operator",
+      "quality_tech",
+      "floor_supervisor",
+      "process_tech"
+    ],
+    "codes": [],
     "section_num": "4",
     "section_title": "Limit samples",
     "citation": "QC-004 §4",
@@ -1136,6 +2259,17 @@
     "category": "quality",
     "revision": "6.2",
     "effective_date": "2026-06-15",
+    "equipment": [
+      "QC_lab",
+      "all_cells"
+    ],
+    "applies_to": [
+      "operator",
+      "quality_tech",
+      "floor_supervisor",
+      "process_tech"
+    ],
+    "codes": [],
     "section_num": "5",
     "section_title": "When in doubt",
     "citation": "QC-004 §5",
@@ -1149,6 +2283,18 @@
     "category": "quality",
     "revision": "4.0",
     "effective_date": "2026-02-09",
+    "equipment": [
+      "all_cells",
+      "quarantine_cage",
+      "QC_lab"
+    ],
+    "applies_to": [
+      "operator",
+      "quality_tech",
+      "floor_supervisor",
+      "material_handler"
+    ],
+    "codes": [],
     "section_num": "1",
     "section_title": "What counts as nonconforming",
     "citation": "QC-005 §1",
@@ -1162,6 +2308,18 @@
     "category": "quality",
     "revision": "4.0",
     "effective_date": "2026-02-09",
+    "equipment": [
+      "all_cells",
+      "quarantine_cage",
+      "QC_lab"
+    ],
+    "applies_to": [
+      "operator",
+      "quality_tech",
+      "floor_supervisor",
+      "material_handler"
+    ],
+    "codes": [],
     "section_num": "2",
     "section_title": "Immediate containment",
     "citation": "QC-005 §2",
@@ -1175,6 +2333,18 @@
     "category": "quality",
     "revision": "4.0",
     "effective_date": "2026-02-09",
+    "equipment": [
+      "all_cells",
+      "quarantine_cage",
+      "QC_lab"
+    ],
+    "applies_to": [
+      "operator",
+      "quality_tech",
+      "floor_supervisor",
+      "material_handler"
+    ],
+    "codes": [],
     "section_num": "3",
     "section_title": "Bounding the affected population",
     "citation": "QC-005 §3",
@@ -1188,6 +2358,18 @@
     "category": "quality",
     "revision": "4.0",
     "effective_date": "2026-02-09",
+    "equipment": [
+      "all_cells",
+      "quarantine_cage",
+      "QC_lab"
+    ],
+    "applies_to": [
+      "operator",
+      "quality_tech",
+      "floor_supervisor",
+      "material_handler"
+    ],
+    "codes": [],
     "section_num": "4",
     "section_title": "Material Review Board (MRB)",
     "citation": "QC-005 §4",
@@ -1201,6 +2383,18 @@
     "category": "quality",
     "revision": "4.0",
     "effective_date": "2026-02-09",
+    "equipment": [
+      "all_cells",
+      "quarantine_cage",
+      "QC_lab"
+    ],
+    "applies_to": [
+      "operator",
+      "quality_tech",
+      "floor_supervisor",
+      "material_handler"
+    ],
+    "codes": [],
     "section_num": "5",
     "section_title": "Scrap handling",
     "citation": "QC-005 §5",
@@ -1214,6 +2408,18 @@
     "category": "quality",
     "revision": "4.0",
     "effective_date": "2026-02-09",
+    "equipment": [
+      "all_cells",
+      "quarantine_cage",
+      "QC_lab"
+    ],
+    "applies_to": [
+      "operator",
+      "quality_tech",
+      "floor_supervisor",
+      "material_handler"
+    ],
+    "codes": [],
     "section_num": "6",
     "section_title": "Records and escalation",
     "citation": "QC-005 §6",
@@ -1227,6 +2433,18 @@
     "category": "quality",
     "revision": "3.5",
     "effective_date": "2025-11-17",
+    "equipment": [
+      "QC_lab",
+      "CMM",
+      "torque_wrenches",
+      "moisture_analyzer"
+    ],
+    "applies_to": [
+      "quality_tech",
+      "maintenance_tech",
+      "process_tech"
+    ],
+    "codes": [],
     "section_num": "1",
     "section_title": "Scope",
     "citation": "QC-006 §1",
@@ -1240,6 +2458,18 @@
     "category": "quality",
     "revision": "3.5",
     "effective_date": "2025-11-17",
+    "equipment": [
+      "QC_lab",
+      "CMM",
+      "torque_wrenches",
+      "moisture_analyzer"
+    ],
+    "applies_to": [
+      "quality_tech",
+      "maintenance_tech",
+      "process_tech"
+    ],
+    "codes": [],
     "section_num": "2",
     "section_title": "Calibration intervals",
     "citation": "QC-006 §2",
@@ -1253,6 +2483,18 @@
     "category": "quality",
     "revision": "3.5",
     "effective_date": "2025-11-17",
+    "equipment": [
+      "QC_lab",
+      "CMM",
+      "torque_wrenches",
+      "moisture_analyzer"
+    ],
+    "applies_to": [
+      "quality_tech",
+      "maintenance_tech",
+      "process_tech"
+    ],
+    "codes": [],
     "section_num": "3",
     "section_title": "Control of gages",
     "citation": "QC-006 §3",
@@ -1266,6 +2508,18 @@
     "category": "quality",
     "revision": "3.5",
     "effective_date": "2025-11-17",
+    "equipment": [
+      "QC_lab",
+      "CMM",
+      "torque_wrenches",
+      "moisture_analyzer"
+    ],
+    "applies_to": [
+      "quality_tech",
+      "maintenance_tech",
+      "process_tech"
+    ],
+    "codes": [],
     "section_num": "4",
     "section_title": "When a gage is found out of calibration",
     "citation": "QC-006 §4",
@@ -1279,6 +2533,18 @@
     "category": "quality",
     "revision": "3.5",
     "effective_date": "2025-11-17",
+    "equipment": [
+      "QC_lab",
+      "CMM",
+      "torque_wrenches",
+      "moisture_analyzer"
+    ],
+    "applies_to": [
+      "quality_tech",
+      "maintenance_tech",
+      "process_tech"
+    ],
+    "codes": [],
     "section_num": "5",
     "section_title": "Measurement System Analysis",
     "citation": "QC-006 §5",
@@ -1292,6 +2558,18 @@
     "category": "quality",
     "revision": "3.5",
     "effective_date": "2025-11-17",
+    "equipment": [
+      "QC_lab",
+      "CMM",
+      "torque_wrenches",
+      "moisture_analyzer"
+    ],
+    "applies_to": [
+      "quality_tech",
+      "maintenance_tech",
+      "process_tech"
+    ],
+    "codes": [],
     "section_num": "6",
     "section_title": "Moisture analyzer method",
     "citation": "QC-006 §6",
@@ -1305,6 +2583,17 @@
     "category": "quality",
     "revision": "3.1",
     "effective_date": "2026-03-30",
+    "equipment": [
+      "QC_lab",
+      "plant_wide"
+    ],
+    "applies_to": [
+      "quality_tech",
+      "floor_supervisor",
+      "process_tech",
+      "maintenance_tech"
+    ],
+    "codes": [],
     "section_num": "1",
     "section_title": "Response clock",
     "citation": "QC-007 §1",
@@ -1318,6 +2607,17 @@
     "category": "quality",
     "revision": "3.1",
     "effective_date": "2026-03-30",
+    "equipment": [
+      "QC_lab",
+      "plant_wide"
+    ],
+    "applies_to": [
+      "quality_tech",
+      "floor_supervisor",
+      "process_tech",
+      "maintenance_tech"
+    ],
+    "codes": [],
     "section_num": "2",
     "section_title": "Containment first, always",
     "citation": "QC-007 §2",
@@ -1331,6 +2631,17 @@
     "category": "quality",
     "revision": "3.1",
     "effective_date": "2026-03-30",
+    "equipment": [
+      "QC_lab",
+      "plant_wide"
+    ],
+    "applies_to": [
+      "quality_tech",
+      "floor_supervisor",
+      "process_tech",
+      "maintenance_tech"
+    ],
+    "codes": [],
     "section_num": "3",
     "section_title": "Root cause",
     "citation": "QC-007 §3",
@@ -1344,6 +2655,17 @@
     "category": "quality",
     "revision": "3.1",
     "effective_date": "2026-03-30",
+    "equipment": [
+      "QC_lab",
+      "plant_wide"
+    ],
+    "applies_to": [
+      "quality_tech",
+      "floor_supervisor",
+      "process_tech",
+      "maintenance_tech"
+    ],
+    "codes": [],
     "section_num": "4",
     "section_title": "Corrective action and verification",
     "citation": "QC-007 §4",
@@ -1357,6 +2679,17 @@
     "category": "quality",
     "revision": "3.1",
     "effective_date": "2026-03-30",
+    "equipment": [
+      "QC_lab",
+      "plant_wide"
+    ],
+    "applies_to": [
+      "quality_tech",
+      "floor_supervisor",
+      "process_tech",
+      "maintenance_tech"
+    ],
+    "codes": [],
     "section_num": "5",
     "section_title": "Supplier-caused issues",
     "citation": "QC-007 §5",
@@ -1370,6 +2703,17 @@
     "category": "quality",
     "revision": "3.1",
     "effective_date": "2026-03-30",
+    "equipment": [
+      "QC_lab",
+      "plant_wide"
+    ],
+    "applies_to": [
+      "quality_tech",
+      "floor_supervisor",
+      "process_tech",
+      "maintenance_tech"
+    ],
+    "codes": [],
     "section_num": "6",
     "section_title": "Read-across",
     "citation": "QC-007 §6",
@@ -1383,6 +2727,17 @@
     "category": "quality",
     "revision": "3.1",
     "effective_date": "2026-03-30",
+    "equipment": [
+      "QC_lab",
+      "plant_wide"
+    ],
+    "applies_to": [
+      "quality_tech",
+      "floor_supervisor",
+      "process_tech",
+      "maintenance_tech"
+    ],
+    "codes": [],
     "section_num": "7",
     "section_title": "Internal escalation",
     "citation": "QC-007 §7",
@@ -1396,6 +2751,17 @@
     "category": "quality",
     "revision": "3.1",
     "effective_date": "2026-03-30",
+    "equipment": [
+      "QC_lab",
+      "plant_wide"
+    ],
+    "applies_to": [
+      "quality_tech",
+      "floor_supervisor",
+      "process_tech",
+      "maintenance_tech"
+    ],
+    "codes": [],
     "section_num": "8",
     "section_title": "Records",
     "citation": "QC-007 §8",
@@ -1409,6 +2775,19 @@
     "category": "safety",
     "revision": "4.2",
     "effective_date": "2025-11-03",
+    "equipment": [
+      "TX-250",
+      "TX-500",
+      "AD-300",
+      "TCU-90",
+      "PR-12"
+    ],
+    "applies_to": [
+      "maintenance_tech",
+      "floor_supervisor",
+      "process_tech"
+    ],
+    "codes": [],
     "section_num": "1",
     "section_title": "Purpose",
     "citation": "SAF-001 §1",
@@ -1422,6 +2801,19 @@
     "category": "safety",
     "revision": "4.2",
     "effective_date": "2025-11-03",
+    "equipment": [
+      "TX-250",
+      "TX-500",
+      "AD-300",
+      "TCU-90",
+      "PR-12"
+    ],
+    "applies_to": [
+      "maintenance_tech",
+      "floor_supervisor",
+      "process_tech"
+    ],
+    "codes": [],
     "section_num": "2",
     "section_title": "Scope",
     "citation": "SAF-001 §2",
@@ -1435,6 +2827,27 @@
     "category": "safety",
     "revision": "4.2",
     "effective_date": "2025-11-03",
+    "equipment": [
+      "TX-250",
+      "TX-500",
+      "AD-300",
+      "TCU-90",
+      "PR-12"
+    ],
+    "applies_to": [
+      "maintenance_tech",
+      "floor_supervisor",
+      "process_tech"
+    ],
+    "codes": [
+      "AV1",
+      "BV1",
+      "L1",
+      "L2",
+      "L3",
+      "PG1",
+      "PG2"
+    ],
     "section_num": "3",
     "section_title": "Energy sources present on a molding cell",
     "citation": "SAF-001 §3",
@@ -1448,6 +2861,23 @@
     "category": "safety",
     "revision": "4.2",
     "effective_date": "2025-11-03",
+    "equipment": [
+      "TX-250",
+      "TX-500",
+      "AD-300",
+      "TCU-90",
+      "PR-12"
+    ],
+    "applies_to": [
+      "maintenance_tech",
+      "floor_supervisor",
+      "process_tech"
+    ],
+    "codes": [
+      "AV1",
+      "BV1",
+      "PG1"
+    ],
     "section_num": "4",
     "section_title": "Required six-step sequence",
     "citation": "SAF-001 §4",
@@ -1461,6 +2891,29 @@
     "category": "safety",
     "revision": "4.2",
     "effective_date": "2025-11-03",
+    "equipment": [
+      "TX-250",
+      "TX-500",
+      "AD-300",
+      "TCU-90",
+      "PR-12"
+    ],
+    "applies_to": [
+      "maintenance_tech",
+      "floor_supervisor",
+      "process_tech"
+    ],
+    "codes": [
+      "BV1A",
+      "BV1B",
+      "DS04",
+      "DS09",
+      "HV3",
+      "PG1A",
+      "PG1B",
+      "TX250",
+      "TX500"
+    ],
     "section_num": "5",
     "section_title": "Press-specific isolation notes",
     "citation": "SAF-001 §5",
@@ -1474,6 +2927,19 @@
     "category": "safety",
     "revision": "4.2",
     "effective_date": "2025-11-03",
+    "equipment": [
+      "TX-250",
+      "TX-500",
+      "AD-300",
+      "TCU-90",
+      "PR-12"
+    ],
+    "applies_to": [
+      "maintenance_tech",
+      "floor_supervisor",
+      "process_tech"
+    ],
+    "codes": [],
     "section_num": "6",
     "section_title": "Group lockout",
     "citation": "SAF-001 §6",
@@ -1487,6 +2953,19 @@
     "category": "safety",
     "revision": "4.2",
     "effective_date": "2025-11-03",
+    "equipment": [
+      "TX-250",
+      "TX-500",
+      "AD-300",
+      "TCU-90",
+      "PR-12"
+    ],
+    "applies_to": [
+      "maintenance_tech",
+      "floor_supervisor",
+      "process_tech"
+    ],
+    "codes": [],
     "section_num": "7",
     "section_title": "Shift change continuity",
     "citation": "SAF-001 §7",
@@ -1500,6 +2979,21 @@
     "category": "safety",
     "revision": "4.2",
     "effective_date": "2025-11-03",
+    "equipment": [
+      "TX-250",
+      "TX-500",
+      "AD-300",
+      "TCU-90",
+      "PR-12"
+    ],
+    "applies_to": [
+      "maintenance_tech",
+      "floor_supervisor",
+      "process_tech"
+    ],
+    "codes": [
+      "F2"
+    ],
     "section_num": "8",
     "section_title": "Removing another employee's lock",
     "citation": "SAF-001 §8",
@@ -1513,6 +3007,19 @@
     "category": "safety",
     "revision": "4.2",
     "effective_date": "2025-11-03",
+    "equipment": [
+      "TX-250",
+      "TX-500",
+      "AD-300",
+      "TCU-90",
+      "PR-12"
+    ],
+    "applies_to": [
+      "maintenance_tech",
+      "floor_supervisor",
+      "process_tech"
+    ],
+    "codes": [],
     "section_num": "9",
     "section_title": "Minor servicing exception",
     "citation": "SAF-001 §9",
@@ -1526,6 +3033,19 @@
     "category": "safety",
     "revision": "4.2",
     "effective_date": "2025-11-03",
+    "equipment": [
+      "TX-250",
+      "TX-500",
+      "AD-300",
+      "TCU-90",
+      "PR-12"
+    ],
+    "applies_to": [
+      "maintenance_tech",
+      "floor_supervisor",
+      "process_tech"
+    ],
+    "codes": [],
     "section_num": "10",
     "section_title": "Training and audit",
     "citation": "SAF-001 §10",
@@ -1539,6 +3059,18 @@
     "category": "safety",
     "revision": "3.1",
     "effective_date": "2026-01-12",
+    "equipment": [
+      "TX-250",
+      "TX-500",
+      "PR-12",
+      "GR-40"
+    ],
+    "applies_to": [
+      "operator",
+      "floor_supervisor",
+      "maintenance_tech"
+    ],
+    "codes": [],
     "section_num": "1",
     "section_title": "Purpose",
     "citation": "SAF-002 §1",
@@ -1552,6 +3084,20 @@
     "category": "safety",
     "revision": "3.1",
     "effective_date": "2026-01-12",
+    "equipment": [
+      "TX-250",
+      "TX-500",
+      "PR-12",
+      "GR-40"
+    ],
+    "applies_to": [
+      "operator",
+      "floor_supervisor",
+      "maintenance_tech"
+    ],
+    "codes": [
+      "GR40"
+    ],
     "section_num": "2",
     "section_title": "Guarding required by cell",
     "citation": "SAF-002 §2",
@@ -1565,6 +3111,18 @@
     "category": "safety",
     "revision": "3.1",
     "effective_date": "2026-01-12",
+    "equipment": [
+      "TX-250",
+      "TX-500",
+      "PR-12",
+      "GR-40"
+    ],
+    "applies_to": [
+      "operator",
+      "floor_supervisor",
+      "maintenance_tech"
+    ],
+    "codes": [],
     "section_num": "3",
     "section_title": "Daily pre-shift verification (operator)",
     "citation": "SAF-002 §3",
@@ -1578,6 +3136,18 @@
     "category": "safety",
     "revision": "3.1",
     "effective_date": "2026-01-12",
+    "equipment": [
+      "TX-250",
+      "TX-500",
+      "PR-12",
+      "GR-40"
+    ],
+    "applies_to": [
+      "operator",
+      "floor_supervisor",
+      "maintenance_tech"
+    ],
+    "codes": [],
     "section_num": "4",
     "section_title": "Prohibited practices",
     "citation": "SAF-002 §4",
@@ -1591,6 +3161,18 @@
     "category": "safety",
     "revision": "3.1",
     "effective_date": "2026-01-12",
+    "equipment": [
+      "TX-250",
+      "TX-500",
+      "PR-12",
+      "GR-40"
+    ],
+    "applies_to": [
+      "operator",
+      "floor_supervisor",
+      "maintenance_tech"
+    ],
+    "codes": [],
     "section_num": "5",
     "section_title": "Authorized bypass for setup and troubleshooting",
     "citation": "SAF-002 §5",
@@ -1604,6 +3186,20 @@
     "category": "safety",
     "revision": "3.1",
     "effective_date": "2026-01-12",
+    "equipment": [
+      "TX-250",
+      "TX-500",
+      "PR-12",
+      "GR-40"
+    ],
+    "applies_to": [
+      "operator",
+      "floor_supervisor",
+      "maintenance_tech"
+    ],
+    "codes": [
+      "F1"
+    ],
     "section_num": "6",
     "section_title": "Safety circuit function testing (maintenance)",
     "citation": "SAF-002 §6",
@@ -1617,6 +3213,20 @@
     "category": "safety",
     "revision": "3.1",
     "effective_date": "2026-01-12",
+    "equipment": [
+      "TX-250",
+      "TX-500",
+      "PR-12",
+      "GR-40"
+    ],
+    "applies_to": [
+      "operator",
+      "floor_supervisor",
+      "maintenance_tech"
+    ],
+    "codes": [
+      "F2"
+    ],
     "section_num": "7",
     "section_title": "Safety distance for light curtains",
     "citation": "SAF-002 §7",
@@ -1630,6 +3240,20 @@
     "category": "safety",
     "revision": "3.1",
     "effective_date": "2026-01-12",
+    "equipment": [
+      "TX-250",
+      "TX-500",
+      "PR-12",
+      "GR-40"
+    ],
+    "applies_to": [
+      "operator",
+      "floor_supervisor",
+      "maintenance_tech"
+    ],
+    "codes": [
+      "P2"
+    ],
     "section_num": "8",
     "section_title": "Damaged or nuisance-tripping devices",
     "citation": "SAF-002 §8",
@@ -1643,6 +3267,19 @@
     "category": "safety",
     "revision": "2.4",
     "effective_date": "2025-09-22",
+    "equipment": [
+      "TX-250",
+      "TX-500",
+      "AD-300",
+      "TCU-90"
+    ],
+    "applies_to": [
+      "operator",
+      "process_tech",
+      "maintenance_tech",
+      "floor_supervisor"
+    ],
+    "codes": [],
     "section_num": "1",
     "section_title": "Hazard summary",
     "citation": "SAF-003 §1",
@@ -1656,6 +3293,21 @@
     "category": "safety",
     "revision": "2.4",
     "effective_date": "2025-09-22",
+    "equipment": [
+      "TX-250",
+      "TX-500",
+      "AD-300",
+      "TCU-90"
+    ],
+    "applies_to": [
+      "operator",
+      "process_tech",
+      "maintenance_tech",
+      "floor_supervisor"
+    ],
+    "codes": [
+      "TCU90"
+    ],
     "section_num": "2",
     "section_title": "Temperature thresholds",
     "citation": "SAF-003 §2",
@@ -1669,6 +3321,19 @@
     "category": "safety",
     "revision": "2.4",
     "effective_date": "2025-09-22",
+    "equipment": [
+      "TX-250",
+      "TX-500",
+      "AD-300",
+      "TCU-90"
+    ],
+    "applies_to": [
+      "operator",
+      "process_tech",
+      "maintenance_tech",
+      "floor_supervisor"
+    ],
+    "codes": [],
     "section_num": "3",
     "section_title": "Required PPE for purging",
     "citation": "SAF-003 §3",
@@ -1682,6 +3347,19 @@
     "category": "safety",
     "revision": "2.4",
     "effective_date": "2025-09-22",
+    "equipment": [
+      "TX-250",
+      "TX-500",
+      "AD-300",
+      "TCU-90"
+    ],
+    "applies_to": [
+      "operator",
+      "process_tech",
+      "maintenance_tech",
+      "floor_supervisor"
+    ],
+    "codes": [],
     "section_num": "4",
     "section_title": "Purge procedure",
     "citation": "SAF-003 §4",
@@ -1695,6 +3373,21 @@
     "category": "safety",
     "revision": "2.4",
     "effective_date": "2025-09-22",
+    "equipment": [
+      "TX-250",
+      "TX-500",
+      "AD-300",
+      "TCU-90"
+    ],
+    "applies_to": [
+      "operator",
+      "process_tech",
+      "maintenance_tech",
+      "floor_supervisor"
+    ],
+    "codes": [
+      "POM"
+    ],
     "section_num": "5",
     "section_title": "Blowback and degradation",
     "citation": "SAF-003 §5",
@@ -1708,6 +3401,19 @@
     "category": "safety",
     "revision": "2.4",
     "effective_date": "2025-09-22",
+    "equipment": [
+      "TX-250",
+      "TX-500",
+      "AD-300",
+      "TCU-90"
+    ],
+    "applies_to": [
+      "operator",
+      "process_tech",
+      "maintenance_tech",
+      "floor_supervisor"
+    ],
+    "codes": [],
     "section_num": "6",
     "section_title": "Hot runner and manifold work",
     "citation": "SAF-003 §6",
@@ -1721,6 +3427,21 @@
     "category": "safety",
     "revision": "2.4",
     "effective_date": "2025-09-22",
+    "equipment": [
+      "TX-250",
+      "TX-500",
+      "AD-300",
+      "TCU-90"
+    ],
+    "applies_to": [
+      "operator",
+      "process_tech",
+      "maintenance_tech",
+      "floor_supervisor"
+    ],
+    "codes": [
+      "INC01"
+    ],
     "section_num": "7",
     "section_title": "First aid for thermal burns",
     "citation": "SAF-003 §7",
@@ -1734,6 +3455,19 @@
     "category": "safety",
     "revision": "3.0",
     "effective_date": "2025-12-08",
+    "equipment": [
+      "TX-250",
+      "TX-500",
+      "GR-40",
+      "chiller_loop"
+    ],
+    "applies_to": [
+      "operator",
+      "maintenance_tech",
+      "floor_supervisor",
+      "material_handler"
+    ],
+    "codes": [],
     "section_num": "1",
     "section_title": "Hazard communication basics",
     "citation": "SAF-004 §1",
@@ -1747,6 +3481,25 @@
     "category": "safety",
     "revision": "3.0",
     "effective_date": "2025-12-08",
+    "equipment": [
+      "TX-250",
+      "TX-500",
+      "GR-40",
+      "chiller_loop"
+    ],
+    "applies_to": [
+      "operator",
+      "maintenance_tech",
+      "floor_supervisor",
+      "material_handler"
+    ],
+    "codes": [
+      "MR20",
+      "PC",
+      "PC7",
+      "RP5",
+      "SC3"
+    ],
     "section_num": "2",
     "section_title": "Chemical inventory — floor level",
     "citation": "SAF-004 §2",
@@ -1760,6 +3513,19 @@
     "category": "safety",
     "revision": "3.0",
     "effective_date": "2025-12-08",
+    "equipment": [
+      "TX-250",
+      "TX-500",
+      "GR-40",
+      "chiller_loop"
+    ],
+    "applies_to": [
+      "operator",
+      "maintenance_tech",
+      "floor_supervisor",
+      "material_handler"
+    ],
+    "codes": [],
     "section_num": "3",
     "section_title": "Storage rules",
     "citation": "SAF-004 §3",
@@ -1773,6 +3539,21 @@
     "category": "safety",
     "revision": "3.0",
     "effective_date": "2025-12-08",
+    "equipment": [
+      "TX-250",
+      "TX-500",
+      "GR-40",
+      "chiller_loop"
+    ],
+    "applies_to": [
+      "operator",
+      "maintenance_tech",
+      "floor_supervisor",
+      "material_handler"
+    ],
+    "codes": [
+      "SC3"
+    ],
     "section_num": "4",
     "section_title": "Solvent use and ventilation",
     "citation": "SAF-004 §4",
@@ -1786,6 +3567,19 @@
     "category": "safety",
     "revision": "3.0",
     "effective_date": "2025-12-08",
+    "equipment": [
+      "TX-250",
+      "TX-500",
+      "GR-40",
+      "chiller_loop"
+    ],
+    "applies_to": [
+      "operator",
+      "maintenance_tech",
+      "floor_supervisor",
+      "material_handler"
+    ],
+    "codes": [],
     "section_num": "5",
     "section_title": "Spill response — the SWIM sequence",
     "citation": "SAF-004 §5",
@@ -1799,6 +3593,19 @@
     "category": "safety",
     "revision": "3.0",
     "effective_date": "2025-12-08",
+    "equipment": [
+      "TX-250",
+      "TX-500",
+      "GR-40",
+      "chiller_loop"
+    ],
+    "applies_to": [
+      "operator",
+      "maintenance_tech",
+      "floor_supervisor",
+      "material_handler"
+    ],
+    "codes": [],
     "section_num": "6",
     "section_title": "Waste",
     "citation": "SAF-004 §6",
@@ -1812,6 +3619,20 @@
     "category": "safety",
     "revision": "5.0",
     "effective_date": "2026-02-02",
+    "equipment": [
+      "plant_wide"
+    ],
+    "applies_to": [
+      "operator",
+      "process_tech",
+      "maintenance_tech",
+      "floor_supervisor",
+      "material_handler",
+      "visitor"
+    ],
+    "codes": [
+      "GR40"
+    ],
     "section_num": "1",
     "section_title": "Baseline PPE — entire production floor",
     "citation": "SAF-005 §1",
@@ -1825,6 +3646,20 @@
     "category": "safety",
     "revision": "5.0",
     "effective_date": "2026-02-02",
+    "equipment": [
+      "plant_wide"
+    ],
+    "applies_to": [
+      "operator",
+      "process_tech",
+      "maintenance_tech",
+      "floor_supervisor",
+      "material_handler",
+      "visitor"
+    ],
+    "codes": [
+      "A4"
+    ],
     "section_num": "2",
     "section_title": "Task-based PPE matrix",
     "citation": "SAF-005 §2",
@@ -1838,6 +3673,20 @@
     "category": "safety",
     "revision": "5.0",
     "effective_date": "2026-02-02",
+    "equipment": [
+      "plant_wide"
+    ],
+    "applies_to": [
+      "operator",
+      "process_tech",
+      "maintenance_tech",
+      "floor_supervisor",
+      "material_handler",
+      "visitor"
+    ],
+    "codes": [
+      "A4"
+    ],
     "section_num": "3",
     "section_title": "Glove selection guidance",
     "citation": "SAF-005 §3",
@@ -1851,6 +3700,18 @@
     "category": "safety",
     "revision": "5.0",
     "effective_date": "2026-02-02",
+    "equipment": [
+      "plant_wide"
+    ],
+    "applies_to": [
+      "operator",
+      "process_tech",
+      "maintenance_tech",
+      "floor_supervisor",
+      "material_handler",
+      "visitor"
+    ],
+    "codes": [],
     "section_num": "4",
     "section_title": "Inspection, replacement, and cost",
     "citation": "SAF-005 §4",
@@ -1864,6 +3725,18 @@
     "category": "safety",
     "revision": "5.0",
     "effective_date": "2026-02-02",
+    "equipment": [
+      "plant_wide"
+    ],
+    "applies_to": [
+      "operator",
+      "process_tech",
+      "maintenance_tech",
+      "floor_supervisor",
+      "material_handler",
+      "visitor"
+    ],
+    "codes": [],
     "section_num": "5",
     "section_title": "Visitors and contractors",
     "citation": "SAF-005 §5",
@@ -1877,6 +3750,18 @@
     "category": "safety",
     "revision": "2.2",
     "effective_date": "2026-03-16",
+    "equipment": [
+      "plant_wide"
+    ],
+    "applies_to": [
+      "operator",
+      "process_tech",
+      "maintenance_tech",
+      "floor_supervisor",
+      "material_handler",
+      "visitor"
+    ],
+    "codes": [],
     "section_num": "1",
     "section_title": "Emergency contacts",
     "citation": "SAF-006 §1",
@@ -1890,6 +3775,18 @@
     "category": "safety",
     "revision": "2.2",
     "effective_date": "2026-03-16",
+    "equipment": [
+      "plant_wide"
+    ],
+    "applies_to": [
+      "operator",
+      "process_tech",
+      "maintenance_tech",
+      "floor_supervisor",
+      "material_handler",
+      "visitor"
+    ],
+    "codes": [],
     "section_num": "2",
     "section_title": "Alarm signals",
     "citation": "SAF-006 §2",
@@ -1903,6 +3800,18 @@
     "category": "safety",
     "revision": "2.2",
     "effective_date": "2026-03-16",
+    "equipment": [
+      "plant_wide"
+    ],
+    "applies_to": [
+      "operator",
+      "process_tech",
+      "maintenance_tech",
+      "floor_supervisor",
+      "material_handler",
+      "visitor"
+    ],
+    "codes": [],
     "section_num": "3",
     "section_title": "Evacuation",
     "citation": "SAF-006 §3",
@@ -1916,6 +3825,18 @@
     "category": "safety",
     "revision": "2.2",
     "effective_date": "2026-03-16",
+    "equipment": [
+      "plant_wide"
+    ],
+    "applies_to": [
+      "operator",
+      "process_tech",
+      "maintenance_tech",
+      "floor_supervisor",
+      "material_handler",
+      "visitor"
+    ],
+    "codes": [],
     "section_num": "4",
     "section_title": "Headcount",
     "citation": "SAF-006 §4",
@@ -1929,6 +3850,20 @@
     "category": "safety",
     "revision": "2.2",
     "effective_date": "2026-03-16",
+    "equipment": [
+      "plant_wide"
+    ],
+    "applies_to": [
+      "operator",
+      "process_tech",
+      "maintenance_tech",
+      "floor_supervisor",
+      "material_handler",
+      "visitor"
+    ],
+    "codes": [
+      "CO2"
+    ],
     "section_num": "5",
     "section_title": "Fire",
     "citation": "SAF-006 §5",
@@ -1942,6 +3877,18 @@
     "category": "safety",
     "revision": "2.2",
     "effective_date": "2026-03-16",
+    "equipment": [
+      "plant_wide"
+    ],
+    "applies_to": [
+      "operator",
+      "process_tech",
+      "maintenance_tech",
+      "floor_supervisor",
+      "material_handler",
+      "visitor"
+    ],
+    "codes": [],
     "section_num": "6",
     "section_title": "Medical emergency",
     "citation": "SAF-006 §6",
@@ -1955,6 +3902,18 @@
     "category": "safety",
     "revision": "2.2",
     "effective_date": "2026-03-16",
+    "equipment": [
+      "plant_wide"
+    ],
+    "applies_to": [
+      "operator",
+      "process_tech",
+      "maintenance_tech",
+      "floor_supervisor",
+      "material_handler",
+      "visitor"
+    ],
+    "codes": [],
     "section_num": "7",
     "section_title": "Severe weather",
     "citation": "SAF-006 §7",
@@ -1968,6 +3927,18 @@
     "category": "safety",
     "revision": "2.2",
     "effective_date": "2026-03-16",
+    "equipment": [
+      "plant_wide"
+    ],
+    "applies_to": [
+      "operator",
+      "process_tech",
+      "maintenance_tech",
+      "floor_supervisor",
+      "material_handler",
+      "visitor"
+    ],
+    "codes": [],
     "section_num": "8",
     "section_title": "Drills and readiness",
     "citation": "SAF-006 §8",
@@ -1981,6 +3952,18 @@
     "category": "safety",
     "revision": "3.3",
     "effective_date": "2025-10-20",
+    "equipment": [
+      "forklift_FL_series",
+      "pallet_jack",
+      "overhead_crane"
+    ],
+    "applies_to": [
+      "material_handler",
+      "floor_supervisor",
+      "operator",
+      "maintenance_tech"
+    ],
+    "codes": [],
     "section_num": "1",
     "section_title": "Authorization",
     "citation": "SAF-007 §1",
@@ -1994,6 +3977,20 @@
     "category": "safety",
     "revision": "3.3",
     "effective_date": "2025-10-20",
+    "equipment": [
+      "forklift_FL_series",
+      "pallet_jack",
+      "overhead_crane"
+    ],
+    "applies_to": [
+      "material_handler",
+      "floor_supervisor",
+      "operator",
+      "maintenance_tech"
+    ],
+    "codes": [
+      "F1"
+    ],
     "section_num": "2",
     "section_title": "Pre-use inspection",
     "citation": "SAF-007 §2",
@@ -2007,6 +4004,18 @@
     "category": "safety",
     "revision": "3.3",
     "effective_date": "2025-10-20",
+    "equipment": [
+      "forklift_FL_series",
+      "pallet_jack",
+      "overhead_crane"
+    ],
+    "applies_to": [
+      "material_handler",
+      "floor_supervisor",
+      "operator",
+      "maintenance_tech"
+    ],
+    "codes": [],
     "section_num": "3",
     "section_title": "Operating rules",
     "citation": "SAF-007 §3",
@@ -2020,6 +4029,18 @@
     "category": "safety",
     "revision": "3.3",
     "effective_date": "2025-10-20",
+    "equipment": [
+      "forklift_FL_series",
+      "pallet_jack",
+      "overhead_crane"
+    ],
+    "applies_to": [
+      "material_handler",
+      "floor_supervisor",
+      "operator",
+      "maintenance_tech"
+    ],
+    "codes": [],
     "section_num": "4",
     "section_title": "Pedestrian rules",
     "citation": "SAF-007 §4",
@@ -2033,6 +4054,21 @@
     "category": "safety",
     "revision": "3.3",
     "effective_date": "2025-10-20",
+    "equipment": [
+      "forklift_FL_series",
+      "pallet_jack",
+      "overhead_crane"
+    ],
+    "applies_to": [
+      "material_handler",
+      "floor_supervisor",
+      "operator",
+      "maintenance_tech"
+    ],
+    "codes": [
+      "BAY5",
+      "P2"
+    ],
     "section_num": "5",
     "section_title": "Blind corners and high-traffic points",
     "citation": "SAF-007 §5",
@@ -2046,6 +4082,18 @@
     "category": "safety",
     "revision": "3.3",
     "effective_date": "2025-10-20",
+    "equipment": [
+      "forklift_FL_series",
+      "pallet_jack",
+      "overhead_crane"
+    ],
+    "applies_to": [
+      "material_handler",
+      "floor_supervisor",
+      "operator",
+      "maintenance_tech"
+    ],
+    "codes": [],
     "section_num": "6",
     "section_title": "Load handling",
     "citation": "SAF-007 §6",
@@ -2059,6 +4107,18 @@
     "category": "safety",
     "revision": "3.3",
     "effective_date": "2025-10-20",
+    "equipment": [
+      "forklift_FL_series",
+      "pallet_jack",
+      "overhead_crane"
+    ],
+    "applies_to": [
+      "material_handler",
+      "floor_supervisor",
+      "operator",
+      "maintenance_tech"
+    ],
+    "codes": [],
     "section_num": "7",
     "section_title": "Overhead crane and mold handling",
     "citation": "SAF-007 §7",
@@ -2072,6 +4132,20 @@
     "category": "safety",
     "revision": "3.3",
     "effective_date": "2025-10-20",
+    "equipment": [
+      "forklift_FL_series",
+      "pallet_jack",
+      "overhead_crane"
+    ],
+    "applies_to": [
+      "material_handler",
+      "floor_supervisor",
+      "operator",
+      "maintenance_tech"
+    ],
+    "codes": [
+      "INC01"
+    ],
     "section_num": "8",
     "section_title": "Incident reporting",
     "citation": "SAF-007 §8",

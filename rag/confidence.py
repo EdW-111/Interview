@@ -14,11 +14,14 @@ def retrieval_signal(chunks):
     """Summarise how strong the retrieved evidence is."""
     if not chunks:
         return {"top": 0.0, "mean3": 0.0, "band": "none", "score": 0.0,
-                "note": "nothing retrieved"}
+                "note": "nothing retrieved", "exact_match": []}
 
-    scores = [c["score"] for c in chunks]
+    # Chunks are ordered by cosine + lexical boost, so the first one is not
+    # necessarily the best cosine. The bands are calibrated on cosine alone.
+    scores = sorted((c["score"] for c in chunks), reverse=True)
     top = scores[0]
     mean3 = sum(scores[:3]) / min(3, len(scores))
+    exact = sorted({code for c in chunks for code in c.get("code_hits", [])})
 
     if top >= SCORE_STRONG:
         band, note = "strong", "close match in the documentation"
@@ -35,8 +38,12 @@ def retrieval_signal(chunks):
     norm = max(0.0, min(1.0, (top - SCORE_OOS_ANCHOR) /
                         (SCORE_STRONG - SCORE_OOS_ANCHOR) * 0.85))
 
+    # Reported alongside the band, not folded into it: an exact identifier
+    # hit is strong evidence the corpus covers the question, but the bands
+    # were fitted on cosine and silently inflating them would break that.
     return {"top": round(top, 4), "mean3": round(mean3, 4),
-            "band": band, "score": round(norm, 3), "note": note}
+            "band": band, "score": round(norm, 3), "note": note,
+            "exact_match": exact}
 
 
 def combine(router_conf: float, retrieval: dict) -> dict:

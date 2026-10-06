@@ -27,25 +27,48 @@ def ablation(scored, n):
 
     chunks, vecs, _ = _load()
 
-    def naive(q):
-        s = vecs @ embed_query(q)
-        return {chunks[i]["citation"] for i in np.argsort(-s)[:n]}
+    def cats_for(q):
+        return next(x["expected_categories"] for x in scored if x["question"] == q)
 
-    def ours(q):
-        cats = next(x["expected_categories"] for x in scored if x["question"] == q)
-        return {h["citation"] for h in search(q, cats, max_chunks=n)}
+    def naive_ranked(q):
+        s = vecs @ embed_query(q)
+        return [chunks[i]["citation"] for i in np.argsort(-s)[:n]]
+
+    def routed_dense(q):
+        return [h["citation"] for h in search(q, cats_for(q), max_chunks=n, lexical=False)]
+
+    def routed_hybrid(q):
+        return [h["citation"] for h in search(q, cats_for(q), max_chunks=n)]
 
     cc = [q for q in scored if q["kind"] in ("cross-cutting", "safety-gated")]
+    codes = [q for q in scored if q["kind"] in ("code-lookup", "role-gated")]
+    variants = [("naive flat top-k (plain RAG)  ", naive_ranked),
+                ("routed fan-out, dense only    ", routed_dense),
+                ("routed fan-out + code boost   ", routed_hybrid)]
+    got = {name: {q["id"]: fn(q["question"]) for q in scored} for name, fn in variants}
 
-    def rate(fn, qs_):
-        return sum(1 for q in qs_ if set(q["expected_citations"]) <= fn(q["question"]))
+    def recall(name, qs_):
+        return sum(1 for q in qs_ if set(q["expected_citations"]) <= set(got[name][q["id"]]))
+
+    # Recall @ 8 saturates on single-hop questions; where an identifier
+    # lookup actually differs is whether the right section is at the top or
+    # buried under a look-alike sibling (E-104 is in §2, §3 and §4 all look
+    # the same to the embedding).
+    def at_rank1(name, qs_):
+        return sum(1 for q in qs_ if got[name][q["id"]][:1] and
+                   got[name][q["id"]][0] in q["expected_citations"])
 
     print(f"\n  ABLATION — section-level context recall @ {n} chunks")
-    print(f"    {'':32} {'all':>9}   {'multi-source':>12}")
-    for name, fn in [("naive flat top-k (plain RAG)", naive),
-                     ("routed fan-out + diversity  ", ours)]:
-        print(f"    {name}  {rate(fn, scored):>3}/{len(scored):<5} "
-              f"{rate(fn, cc):>7}/{len(cc)}")
+    print(f"    {'':34} {'all':>9}   {'multi-source':>12}   {'code/role':>9}")
+    for name, _ in variants:
+        print(f"    {name}  {recall(name, scored):>3}/{len(scored):<5} "
+              f"{recall(name, cc):>7}/{len(cc):<5} {recall(name, codes):>7}/{len(codes)}")
+
+    print(f"\n  ABLATION — an expected section at rank 1")
+    print(f"    {'':34} {'all':>9}   {'code/role':>9}")
+    for name, _ in variants:
+        print(f"    {name}  {at_rank1(name, scored):>3}/{len(scored):<5} "
+              f"{at_rank1(name, codes):>7}/{len(codes)}")
 
 
 def main():

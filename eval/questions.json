@@ -152,5 +152,63 @@
     "kind": "out-of-scope",
     "expected_categories": [],
     "expected_citations": []
+  },
+  {
+    "id": "q23",
+    "question": "What does fault D-01 mean and can I keep molding?",
+    "kind": "code-lookup",
+    "expected_categories": ["maintenance"],
+    "expected_citations": ["MNT-006 §6"]
+  },
+  {
+    "id": "q24",
+    "question": "E203 on press 2 — what are the first checks?",
+    "kind": "code-lookup",
+    "expected_categories": ["maintenance"],
+    "expected_citations": ["MNT-006 §3"]
+  },
+  {
+    "id": "q25",
+    "question": "I'm an operator. Can I reset an E-104 myself?",
+    "role": "operator",
+    "kind": "role-gated",
+    "expected_categories": ["maintenance"],
+    "expected_citations": ["MNT-006 §2"]
+  },
+  {
+    "id": "q26",
+    "question": "Torque spec for M20 mold bolts?",
+    "kind": "code-lookup",
+    "expected_categories": ["maintenance"],
+    "expected_citations": ["MNT-007 §3"]
+  },
+  {
+    "id": "q27",
+    "question": "The robot is showing R-03. What do I check?",
+    "kind": "code-lookup",
+    "expected_categories": ["maintenance"],
+    "expected_citations": ["MNT-006 §6"]
+  },
+  {
+    "id": "q28",
+    "question": "T-02 flow low alarm on the TCU — first thing to check?",
+    "kind": "code-lookup",
+    "expected_categories": ["maintenance"],
+    "expected_citations": ["MNT-006 §6"]
+  },
+  {
+    "id": "q29",
+    "question": "What drying temperature and time do we use for PA66?",
+    "kind": "code-lookup",
+    "expected_categories": ["maintenance"],
+    "expected_citations": ["MNT-004 §2"]
+  },
+  {
+    "id": "q30",
+    "question": "As a process tech, can I approve a limit sample?",
+    "role": "process_tech",
+    "kind": "role-gated",
+    "expected_categories": ["quality"],
+    "expected_citations": ["QC-004 §4"]
   }
 ]

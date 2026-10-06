@@ -23,6 +23,8 @@
   input{flex:1;padding:13px 15px;border-radius:9px;border:1px solid var(--line);
     background:var(--panel);color:var(--txt);font-size:15px;font-family:inherit}
   input:focus{outline:2px solid var(--accent);outline-offset:-1px}
+  select{padding:13px 12px;border-radius:9px;border:1px solid var(--line);
+    background:var(--panel);color:var(--txt);font-size:14px;font-family:inherit}
   button{padding:13px 22px;border-radius:9px;border:0;background:var(--accent);
     color:#fff;font-weight:600;font-size:15px;cursor:pointer;font-family:inherit}
   button:disabled{opacity:.5;cursor:default}
@@ -80,6 +82,14 @@
 
   <form id="f">
     <input id="q" autocomplete="off" placeholder="Ask about a fault, a spec, a procedure…">
+    <select id="role" title="Who is asking">
+      <option value="floor_supervisor" selected>floor supervisor</option>
+      <option value="operator">operator</option>
+      <option value="process_tech">process tech</option>
+      <option value="maintenance_tech">maintenance tech</option>
+      <option value="quality_tech">quality tech</option>
+      <option value="material_handler">material handler</option>
+    </select>
     <button id="go">Ask</button>
   </form>
   <div class="examples" id="examples"></div>
@@ -90,9 +100,10 @@
 <script>
 const EXAMPLES = [
   "How do I clear a mold protect fault E-301?",
+  "E203 on press 2 — first checks?",
   "Parts have silver streaks near the gate",
-  "What torque for M16 mold clamp bolts?",
-  "Can I run production while the FAI is in the lab?",
+  "I'm an operator — can I reset E-104 myself?",
+  "What torque for M20 mold bolts?",
   "What is the plant's vacation policy?"
 ];
 const esc = s => String(s).replace(/[&<>]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
@@ -126,8 +137,9 @@ document.getElementById('f').onsubmit = async e => {
   out.innerHTML = '<div class="card spin">Routing, retrieving, generating…</div>';
 
   try {
+    const role = document.getElementById('role').value;
     const res = await fetch('/ask', {method:'POST',
-      headers:{'Content-Type':'application/json'}, body: JSON.stringify({question:q})});
+      headers:{'Content-Type':'application/json'}, body: JSON.stringify({question:q, role})});
     if(!res.ok) throw new Error('HTTP ' + res.status);
     const d = await res.json();
 
@@ -142,6 +154,9 @@ document.getElementById('f').onsubmit = async e => {
       <div class="row">${badges}
         <span class="pill ${conf.label}">confidence <b>${conf.overall.toFixed(2)}</b> ${conf.label}</span>
         <span class="pill">evidence <b>${ret.band}</b> · top ${ret.top.toFixed(3)}</span>
+        ${(ret.exact_match||[]).length
+          ? `<span class="pill good">exact match <b>${ret.exact_match.map(esc).join(', ')}</b></span>` : ''}
+        <span class="pill">asking as <b>${esc(d.role||'')}</b></span>
         <span class="pill">router self-report <b>${conf.router_confidence.toFixed(2)}</b></span>
         ${d.elapsed_ms ? `<span class="pill">${d.elapsed_ms} ms</span>` : ''}
         ${rt.mode==='fallback' ? '<span class="pill bad">router unavailable — searched all</span>' : ''}
@@ -181,7 +196,8 @@ document.getElementById('f').onsubmit = async e => {
           <td class="mono">${c.score.toFixed(3)}
             <div class="bar" style="width:${(c.score/max*54).toFixed(0)}px"></div></td>
           <td><span class="dot ${c.category}"></span>
-              <span class="mono"><b>${esc(c.citation)}</b></span></td>
+              <span class="mono"><b>${esc(c.citation)}</b></span>
+              ${(c.code_hits||[]).map(h=>`<span class="pill good" style="margin-left:4px">${esc(h)}</span>`).join('')}</td>
           <td>${esc(c.section_title)}</td>
           <td style="color:var(--dim)">${esc(c.preview.slice(0,110))}…</td>
         </tr>`;

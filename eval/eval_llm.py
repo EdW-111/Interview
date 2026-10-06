@@ -27,7 +27,7 @@ QUESTIONS = Path(__file__).parent / "questions.json"
 
 
 def evaluate(q):
-    r = ask(q["question"])
+    r = ask(q["question"], role=q.get("role"))
     got_cats = set(r["route"]["categories"])
     want_cats = set(q["expected_categories"])
     got_cites = [c["citation"] for c in r["chunks"]]
@@ -104,15 +104,16 @@ def render(rows, path, elapsed):
     A("")
 
     A("## Summary\n")
-    A("| id | kind | route | recall | conf | band | top1 | cites | unsupported |")
-    A("|---|---|---|---|---|---|---|---|---|")
+    A("| id | kind | route | recall | conf | band | exact | top1 | cites | unsupported |")
+    A("|---|---|---|---|---|---|---|---|---|---|")
     for r in rows:
         res = r["result"]
         c, ret = res["confidence"], res["retrieval"]
         uns = res["citations"]["unsupported"]
+        exact = ", ".join(ret.get("exact_match", [])) or "—"
         A(f"| [{r['id']}](#{r['id']}) | {r['kind']} | {r['route_mark']} "
           f"| {r['recall_mark']} | {c['overall']:.2f} {c['label']} | {ret['band']} "
-          f"| {ret['top']:.3f} | {len(res['citations']['cited'])} "
+          f"| {exact} | {ret['top']:.3f} | {len(res['citations']['cited'])} "
           f"| {', '.join(uns) if uns else '—'} |")
     A("")
 
@@ -122,7 +123,8 @@ def render(rows, path, elapsed):
         c, ret, rt = res["confidence"], res["retrieval"], res["route"]
 
         A(f"<a id=\"{r['id']}\"></a>")
-        A(f"## {r['id']} — {r['kind']}\n")
+        role_tag = f" (role: {r['role']})" if r.get("role") else ""
+        A(f"## {r['id']} — {r['kind']}{role_tag}\n")
         A(f"**Q:** {r['question']}\n")
 
         A("| | expected | actual |")
@@ -140,11 +142,12 @@ def render(rows, path, elapsed):
         if res["chunks"]:
             A("<details><summary>Retrieved context "
               f"({len(res['chunks'])} chunks)</summary>\n")
-            A("| # | score | citation | category | section | expected |")
-            A("|---|---|---|---|---|---|")
+            A("| # | score | exact | citation | category | section | expected |")
+            A("|---|---|---|---|---|---|---|")
             for i, ch in enumerate(res["chunks"], 1):
                 hit = "**YES**" if ch["citation"] in r["expected_citations"] else ""
-                A(f"| {i} | {ch['score']:.3f} | `{ch['citation']}` | {ch['category']} "
+                ex = ", ".join(ch.get("code_hits", [])) or ""
+                A(f"| {i} | {ch['score']:.3f} | {ex} | `{ch['citation']}` | {ch['category']} "
                   f"| {md_escape(ch['section_title'][:44])} | {hit} |")
             A("\n</details>\n")
 

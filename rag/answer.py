@@ -2,7 +2,7 @@
 import re
 
 from rag.confidence import combine, retrieval_signal
-from rag.config import LLM_MODEL, SCORE_FLOOR, llm
+from rag.config import DEFAULT_ROLE, LLM_MODEL, ROLES, SCORE_FLOOR, llm
 from rag.router import route
 from rag.store import search
 
@@ -21,6 +21,15 @@ Rules:
 conditions attached to it.
 - When a procedure has a safety precondition in the excerpts, state it before the steps.
 - If the excerpts disagree, say so rather than silently picking one.
+
+Authority and role:
+- The asker's role is given with the question. When an excerpt states who may perform a \
+step — a clearance level (A/B/C), "maintenance only", "with LOTO", "Quality Manager \
+approval", "only the person who applied the lock" — say explicitly whether someone in the \
+asker's role may do it themselves or must escalate, and to whom.
+- Each excerpt lists the roles it applies to. If the asker's role is not among them, say the \
+procedure is written for other roles and name who owns it.
+- Never invent an authorization the excerpts do not state.
 
 Using the relevance scores:
 - Scores are a retrieval signal, not a truth signal. A high score does not make an excerpt \
@@ -43,10 +52,16 @@ CITE_RE = re.compile(r"\[([A-Z]{2,3}-\d{3})(?:\s*§\s*([\d.]+))?\]")
 def build_context(chunks):
     parts = []
     for c in chunks:
-        parts.append(
-            f"[{c['citation']}] (relevance {c['score']:.3f}) "
-            f"{c['title']} > §{c['section_num']}. {c['section_title']}\n{c['text']}"
-        )
+        meta = []
+        if c.get("applies_to"):
+            meta.append("applies to: " + ", ".join(c["applies_to"]))
+        if c.get("code_hits"):
+            meta.append("exact match: " + ", ".join(c["code_hits"]))
+        head = (f"[{c['citation']}] (relevance {c['score']:.3f}) "
+                f"{c['title']} > §{c['section_num']}. {c['section_title']}")
+        if meta:
+            head += "\n(" + "; ".join(meta) + ")"
+        parts.append(f"{head}\n{c['text']}")
     return "\n\n---\n\n".join(parts)
 
 
@@ -72,12 +87,13 @@ def check_citations(answer_text, chunks):
             "all_supported": not unsupported}
 
 
-def ask(question: str, k=None, max_chunks=None) -> dict:
+def ask(question: str, k=None, max_chunks=None, role=None) -> dict:
+    role = role if role in ROLES else DEFAULT_ROLE
     r = route(question)
 
     if r["out_of_scope"]:
         return {
-            "question": question, "route": r, "chunks": [], "sources": [],
+            "question": question, "role": role, "route": r, "chunks": [], "sources": [],
             "answer": ("That falls outside the Plant 4 documentation set, which covers "
                        "safety procedures, maintenance manuals, and quality standards. "
                        "For this, contact HR or your supervisor."),
@@ -98,7 +114,7 @@ def ask(question: str, k=None, max_chunks=None) -> dict:
     confidence = combine(r["confidence"], retrieval)
 
     if not chunks:
-        return {"question": question, "route": r, "chunks": [], "sources": [],
+        return {"question": question, "role": role, "route": r, "chunks": [], "sources": [],
                 "answer": "No relevant documentation found for that question.",
                 "safety_flagged": False, "safety_note": None,
                 "retrieval": retrieval, "confidence": confidence,
@@ -107,6 +123,7 @@ def ask(question: str, k=None, max_chunks=None) -> dict:
     safety_flagged = any(c["category"] == "safety" for c in chunks)
 
     user = (f"Documentation excerpts:\n\n{build_context(chunks)}\n\n"
+            f"Asker role: {role}\n"
             f"Question: {question}\n\n"
             f"Top relevance score: {retrieval['top']:.3f} "
             f"(weak-match threshold is {SCORE_FLOOR}).")
@@ -127,6 +144,7 @@ def ask(question: str, k=None, max_chunks=None) -> dict:
 
     return {
         "question": question,
+        "role": role,
         "route": r,
         "chunks": chunks,
         "answer": answer,

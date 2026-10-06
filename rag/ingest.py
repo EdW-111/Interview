@@ -9,6 +9,7 @@ from collections import Counter
 import numpy as np
 import yaml
 
+from rag.codes import extract_codes, normalize
 from rag.config import (CACHE_DIR, CHUNKS_PATH, DATA_DIR, EMBED_MODEL,
                         EMBED_PATH, MAX_SECTION_CHARS, REVIEW_PATH)
 
@@ -59,9 +60,13 @@ def split_sections(body):
 
 
 def build_chunks():
+    docs = [(path, *parse_doc(path)) for path in sorted(DATA_DIR.glob("*/*.md"))]
+    # Cross-references ("see SAF-001 §4") would otherwise make a chunk "contain"
+    # a document it merely points at. Doc ids are matched on doc_id in store.
+    doc_ids = {normalize(fm["doc_id"]) for _, fm, _ in docs}
+
     chunks = []
-    for path in sorted(DATA_DIR.glob("*/*.md")):
-        fm, body = parse_doc(path)
+    for path, fm, body in docs:
         keywords = ", ".join(fm.get("keywords", []) or [])
         for num, title, text in split_sections(body):
             label = f"§{num}. {title}" if num else title
@@ -77,6 +82,9 @@ def build_chunks():
                 "category": fm["category"],
                 "revision": str(fm.get("revision", "")),
                 "effective_date": str(fm.get("effective_date", "")),
+                "equipment": list(fm.get("equipment", []) or []),
+                "applies_to": list(fm.get("applies_to", []) or []),
+                "codes": sorted(extract_codes(text) - doc_ids),
                 "section_num": num,
                 "section_title": title,
                 "citation": f"{fm['doc_id']} §{num}" if num else fm["doc_id"],
